@@ -16,7 +16,14 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-Modernizr
+CSS
+
+A note about CSS. The twentyeleven theme comes fitted with excellent responsive styles. 
+However I wanted to incorporate the CSS reset found in Paul Irish et al's HTML5 Boilerplate.
+Therefore any updates to the parent theme will require the twentyeleven style.css to be copied
+across to the css folder of the bd_2012 child theme.
+
+Modernizr Library
 
 HTML5 Shiv
 HTML5 PrintShiv
