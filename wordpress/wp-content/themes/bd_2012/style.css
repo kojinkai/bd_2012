@@ -6,7 +6,7 @@ Template: twentyeleven
 AuthorURI: http:box-deluxe.com
 */
 
-@import url("css/twentyeleven.css");
+@import url("../twentyeleven/style.css");
 
 /*
  * HTML5 Boilerplate
