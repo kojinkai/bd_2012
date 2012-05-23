@@ -227,8 +227,22 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author:
    ========================================================================== */
+body {
+  background: url('img/textures/bg_paper_texture.gif') repeat 0 0 transparent;
+}
 
+#wrapper {
+  background: url('img/textures/red_perforated_bg.png') repeat-y 0 0 transparent;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 35px;
+}
 
+#page {
+  background: #FFF;
+  max-width: 850px;
+  margin: auto;
+}
 
 
 
