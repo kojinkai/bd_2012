@@ -226,15 +226,22 @@ td { vertical-align: top; }
 
 /* ==|== primary styles =====================================================
    Author:
+   ========================================================================== */ 
+
+/* ==|== Mixins todo =====================================================
+   
    ========================================================================== */
+
+/* structure */
 body {
   background: url('img/textures/bg_paper_texture.gif') repeat 0 0 transparent;
+	font-size: 62.5%;
 }
 
 #wrapper {
-  max-width: 850px;
+  max-width: 890px;
   margin: 0 auto;
-  padding: 0 35px;
+  padding: 0 15px;
   background: url('img/legacy/red_perforated_bg.png') repeat-y top right transparent;
 }
 
@@ -246,10 +253,45 @@ body {
 
 #page {
   background: #FFF;
-  max-width: 810px;
+  max-width: 790px;
   margin: auto;
 }
 
+.boxshadow #page {
+	box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.3);
+}
+
+/* header */
+#main-header {
+	width: 105.6%;
+	border: 1px solid;
+	margin: 0 auto;
+	position: relative;
+	right: 4.7%;
+	padding-left: 3.5%;
+}
+
+#logo {
+	background-image: linear-gradient(4% bottom, rgb(179,50,7) 25%, rgb(171,27,2) 69%);
+	background-image: -o-linear-gradient(4% bottom, rgb(179,50,7) 25%, rgb(171,27,2) 69%);
+	background-image: -moz-linear-gradient(4% bottom, rgb(179,50,7) 25%, rgb(171,27,2) 69%);
+	background-image: -webkit-linear-gradient(4% bottom, rgb(179,50,7) 25%, rgb(171,27,2) 69%);
+	background-image: -ms-linear-gradient(4% bottom, rgb(179,50,7) 25%, rgb(171,27,2) 69%);
+
+	background-image: -webkit-gradient(
+		linear,
+		4% bottom,
+		85% top,
+		color-stop(0.25, rgb(179,50,7)),
+		color-stop(0.69, rgb(171,27,2))
+	);
+	width: 140px;
+	height: 140px;
+}
+
+#logo h1 {
+	background-image: url('img/assets/bd_logo.png');
+}
 
 
 
@@ -280,8 +322,7 @@ body {
    ========================================================================== */
 
 /* For image replacement */
-.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
-.ir br { display: none; }
+.ir { border: 0; font: 0/0 a; text-shadow: none; color: transparent; background-color: transparent; }
 
 /* Hide from both screenreaders and browsers: h5bp.com/u */
 .hidden { display: none !important; visibility: hidden; }
