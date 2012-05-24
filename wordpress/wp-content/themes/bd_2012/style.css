@@ -232,15 +232,21 @@ body {
 }
 
 #wrapper {
-  background: url('img/textures/red_perforated_bg.png') repeat-y 0 0 transparent;
   max-width: 850px;
   margin: 0 auto;
   padding: 0 35px;
+  background: url('img/legacy/red_perforated_bg.png') repeat-y top right transparent;
+}
+
+.multiplebgs #wrapper {
+  background: 
+    url('img/textures/red_perforated_multi_bg_l.png') 0 0 repeat-y, 
+    url('img/textures/red_perforated_multi_bg_r.png') 100% 0 repeat-y;
 }
 
 #page {
   background: #FFF;
-  max-width: 850px;
+  max-width: 810px;
   margin: auto;
 }
 
