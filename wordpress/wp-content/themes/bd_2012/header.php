@@ -27,17 +27,10 @@
   <meta name="viewport" content="width=device-width">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory')?>/style.css">
 	<link rel="stylesheet/less" type="text/css" href="<?php bloginfo('stylesheet_directory')?>/style.css">
 
-  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+  <!-- All JavaScript at the bottom, except this Modernizr build. -->
 
-  <!-- All JavaScript at the bottom, except this Modernizr build.
-       Modernizr enables HTML5 elements & feature detects for optimal performance.
-       Create your own custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="<?php bloginfo('stylesheet_directory')?>/js/libs/modernizr_custom.js"></script>
-	<script src="<?php bloginfo('stylesheet_directory')?>/js/libs/less-1.3.0.min.js" type="text/javascript"></script>
   <?php wp_head() ?>
 </head>
 <body <?php body_class(); ?>>
