@@ -247,13 +247,13 @@ body {
 
 .multiplebgs #wrapper {
   background: 
-    url('img/textures/red_perforated_multi_bg_l.png') 0 0 repeat-y, 
-    url('img/textures/red_perforated_multi_bg_r.png') 100% 0 repeat-y;
+    url('img/textures/bg_red_texture_tile.png') 0 0 repeat-y, 
+    url('img/textures/bg_red_texture_tile.png') 99% 0 repeat-y;
 }
 
 #page {
   background: #FFF;
-  max-width: 790px;
+  max-width: 810px;
   margin: auto;
 }
 
