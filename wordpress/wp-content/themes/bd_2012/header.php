@@ -38,22 +38,23 @@
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div id="wrapper">
-  <div id="page" class="hfeed">
-  	<header id="main-header" role="banner">
+  <div id="page-outer" class="hfeed">
+	<div id="page">
+	  	<header id="main-header" role="banner">
   			
-			<!-- <hgroup>
-  				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
-  			</hgroup>  -->
-           <div id="logo">                  
-				<h1 class="ir">Boxdeluxe Web design blog</h1>
-		   </div>
-  			<nav id="access" role="navigation">
-  				<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
-  				<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
-  				<div class="skip-link"><a class="assistive-text" href="#content" title=""></a></div>
-  				<div class="skip-link"><a class="assistive-text" href="#secondary" title=""></a></div>
-  			</nav><!-- #access -->
-  	</header><!-- #branding -->
+				<!-- <hgroup>
+	  				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
+	  			</hgroup>  -->
+	           <div id="logo">                  
+					<h1 class="ir">Boxdeluxe Web design blog</h1>
+			   </div>
+	  			<nav id="access" role="navigation">
+	  				<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
+	  				<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
+	  				<div class="skip-link"><a class="assistive-text" href="#content" title=""></a></div>
+	  				<div class="skip-link"><a class="assistive-text" href="#secondary" title=""></a></div>
+	  			</nav><!-- #access -->
+	  	</header><!-- #branding -->
 
 
-  	<div id="main">
+	  	<div id="main">  
