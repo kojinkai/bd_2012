@@ -280,50 +280,6 @@ body {
 	padding-left: 3.5%;
 }
 
-/*#logo {
-  background-image: linear-gradient(4% bottom, rgb(179,50,7) 25%, rgb(171,27,2) 69%);
-  background-image: -o-linear-gradient(4% bottom, rgb(179,50,7) 25%, rgb(171,27,2) 69%);
-  background-image: -moz-linear-gradient(4% bottom, rgb(179,50,7) 25%, rgb(171,27,2) 69%);
-  background-image: -webkit-linear-gradient(4% bottom, rgb(179,50,7) 25%, rgb(171,27,2) 69%);
-  background-image: -ms-linear-gradient(4% bottom, rgb(179,50,7) 25%, rgb(171,27,2) 69%);
-
-  background-image: -webkit-gradient(
-    linear,
-    4% bottom,
-    85% top,
-    color-stop(0.25, rgb(179,50,7)),
-    color-stop(0.69, rgb(171,27,2))
-  );
-  width: 140px;
-  height: 140px;
-  position: relative;
-  border: 1px solid #222;
-  border-top: 0;
-}*/
-
-/*#logo:before,
-#logo:after {
-  content: '';
-  width: 0;
-  height: 0;
-  top: 100%;
-  position: absolute;
-}
-
-#logo:before {
-  border: 15px solid transparent;
-  border-top-color: rgb(171,27,2);
-  right: 0;
-  border-right-width: 70px; 
-}
-
-#logo:after {
-  border: 15px solid transparent;
-  border-top-color: rgb(171,27,2);
-  left: 0;
-  border-left-width: 70px;
-}*/
-
 #logo {
   width: 140px;
   height: 150px;
