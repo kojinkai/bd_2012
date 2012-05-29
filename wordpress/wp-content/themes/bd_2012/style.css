@@ -228,7 +228,7 @@ td { vertical-align: top; }
 
 /* ==|== Mixins todo =====================================================
 ========================================================================== */ 
-.drop-shadow(@x-axis: 0, @y-axis: 10px, @blur: 2px, @distance: 4px, @alpha: 0.1) {
+.drop-shadow(@x-axis: 0, @y-axis: 10px, @blur: 2px, @distance: 4px, @alpha: 0.2) {
   -webkit-box-shadow: @x-axis @y-axis @blur @distance rgba(0, 0, 0, @alpha);
   -moz-box-shadow: @x-axis @y-axis @blur @distance rgba(0, 0, 0, @alpha);
   box-shadow: @x-axis @y-axis @blur @distance rgba(0, 0, 0, @alpha);
@@ -273,17 +273,24 @@ body {
 
 /* header */
 #main-header {
-	width: 105.6%;
+	width: 104.4%;
+	height: 120px;
 	margin: 0 auto;
 	position: relative;
-	right: 4.7%;
-	padding-left: 3.5%;
+	right: 3.7%;
+	background: url('img/textures/red_paper_texture.png') 0 0 repeat;
+	.drop-shadow(0,1px,11px, 2px, 0.35)
+}
+
+#main-header-inner {
+	background: url('img/textures/grey_texture.png') repeat;
+	padding-left: 2.95%;
 }
 
 #logo {
   width: 140px;
   height: 150px;
-	background: url('img/assets/sprite.png') 0 0 no-repeat transparent;
+	background: url('img/assets/sprite.png') 0 -12px no-repeat transparent;
 }
 
 

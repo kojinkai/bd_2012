@@ -41,19 +41,17 @@
   <div id="page-outer" class="hfeed">
 	<div id="page">
 	  	<header id="main-header" role="banner">
-  			
-				<!-- <hgroup>
-	  				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
-	  			</hgroup>  -->
+        	<div id="main-header-inner">
 	           <div id="logo">                  
-					<h1 class="ir">Boxdeluxe Web design blog</h1>
+					<h1 class="ir"><a href="/" title="box deluxe home">Boxdeluxe Web design blog</a></h1>
 			   </div>
-	  			<nav id="access" role="navigation">
-	  				<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
-	  				<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
-	  				<div class="skip-link"><a class="assistive-text" href="#content" title=""></a></div>
-	  				<div class="skip-link"><a class="assistive-text" href="#secondary" title=""></a></div>
-	  			</nav><!-- #access -->
+            </div>
+  			<nav id="access" role="navigation">
+  				<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
+  				<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
+  				<div class="skip-link"><a class="assistive-text" href="#content" title=""></a></div>
+  				<div class="skip-link"><a class="assistive-text" href="#secondary" title=""></a></div>
+  			</nav><!-- #access --> 
 	  	</header><!-- #branding -->
 
 
