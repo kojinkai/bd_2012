@@ -39,20 +39,27 @@
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div id="wrapper">
   <div id="page-outer" class="hfeed">
-	<div id="page">
+	<div id="page" class="clearfix">
+		<nav id="access" role="navigation">
+			<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
+			<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
+			<div class="skip-link"><a class="assistive-text" href="#content" title=""></a></div>
+			<div class="skip-link"><a class="assistive-text" href="#secondary" title=""></a></div>
+		</nav><!-- #access -->
 	  	<header id="main-header" role="banner">
-        	<div id="main-header-inner">
+        	<div id="top_nav_outer">
 	           <div id="logo">                  
 					<h1 class="ir"><a href="/" title="box deluxe home">Boxdeluxe Web design blog</a></h1>
 			   </div>
+				<nav id="main_nav">
+				  <?php wp_nav_menu( array('menu' 		=> 'main',
+				 						   'menu_class'	=> 'clearfix menu')); ?>
+				<nav>
             </div>
-  			<nav id="access" role="navigation">
-  				<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
-  				<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
-  				<div class="skip-link"><a class="assistive-text" href="#content" title=""></a></div>
-  				<div class="skip-link"><a class="assistive-text" href="#secondary" title=""></a></div>
-  			</nav><!-- #access --> 
 	  	</header><!-- #branding -->
-
+        
+		<section id="author_bio">
+			
+		</section>
 
 	  	<div id="main">  
