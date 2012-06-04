@@ -5,7 +5,7 @@
 ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
-		<div class="entry-main">
+		
 			<header class="entry-header">
 				<?php if ( is_sticky() ) : ?>
 					<hgroup>
@@ -20,7 +20,7 @@
 				<?php endif; ?>
 
 			</header><!-- .entry-header -->
-
+        <div class="entry-main">
 			<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 			<div class="entry-summary">
 				<?php the_excerpt(); ?>
@@ -31,7 +31,7 @@
 				<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
 			</div><!-- .entry-content -->
 			<?php endif; ?> 
-        </div><!-- entry main -->
+
 		<footer class="entry-meta">
 			<?php $show_sep = false; ?>
 			<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
@@ -60,13 +60,7 @@
 			<?php endif; // End if $tags_list ?>
 			<?php endif; // End if 'post' == get_post_type() ?>
 
-			<?php if ( comments_open() ) : ?>
-			<?php if ( $show_sep ) : ?>
-			<span class="sep"> | </span>
-			<?php endif; // End if $show_sep ?>
-			<span class="comments-link"><?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'twentyeleven' ) . '</span>', __( '<b>1</b> Reply', 'twentyeleven' ), __( '<b>%</b> Replies', 'twentyeleven' ) ); ?></span>
-			<?php endif; // End if comments_open() ?>
-
-			<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
+			<?php //edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- #entry-meta -->
+	  </div><!-- entry main --> 
 	</article><!-- #post-<?php the_ID(); ?> -->
