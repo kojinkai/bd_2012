@@ -53,7 +53,7 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
  */
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #CC3300; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
@@ -304,13 +304,14 @@ body {
 
 #main_nav {
 	float: left;
-	width: 75%;
-	margin-left: 5%;
+	width: 65%;
+	margin-left: 14%;
 	.menu {
 		li {
 			float: left;
 			text-transform: uppercase;
 			margin-right: 2%;
+			padding: 4em 0;
 		}
 	}
 }
@@ -343,13 +344,30 @@ body {
 
 .entry-main {
 	float: right;
-	width: 65%;
 }
 
 .entry-meta {
 	float: left;
 	clear: none;
-	width: 30%;
+	width: 20%;
+	text-align: center;
+	span {
+		display: block;
+	}
+	a {
+		text-transform: uppercase;
+	}
+}
+
+.entry-title {
+	padding-top: 0;
+	margin-left: 25%
+}
+
+.entry-content {
+	float: right;
+	width: 75%;
+	padding: 0;
 }
 
 
