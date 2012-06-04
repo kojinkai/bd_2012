@@ -341,7 +341,16 @@ body {
 	margin: 0 3%;
 }
 
+.entry-main {
+	float: right;
+	width: 65%;
+}
 
+.entry-meta {
+	float: left;
+	clear: none;
+	width: 30%;
+}
 
 
 
