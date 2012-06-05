@@ -259,7 +259,7 @@ body {
 	background: url('img/textures/grey_texture.png') repeat;
 	.drop-shadow;
 	position: relative;
-	z-index:0;
+	z-index:20;
 }
 
 #page {
@@ -325,7 +325,7 @@ body {
 /* =Footer */
 #colophon {
 	position: relative;
-	z-index: 20;
+	z-index: 30;
 	#site-generator {
 		background: none;
 	}
@@ -377,10 +377,12 @@ body {
 	right: -23%;
 	top: 0;
 	z-index: 10;
+	padding-top: 107px;
 }                   
 
 #archives {
 	background-color: rgba(175, 44, 49, 0.94);
+	.drop-shadow();
 	text-align: center;
 	ul {
 		list-style: none;
