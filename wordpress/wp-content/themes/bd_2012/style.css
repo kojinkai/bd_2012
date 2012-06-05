@@ -388,6 +388,42 @@ body {
 		list-style: none;
 		padding-left: 0;
 	}
+} 
+
+/* Single */
+.singular {
+	#content {
+		margin: 0 3%;
+	}
+	.entry-header, 
+	.entry-content,
+	footer.entry-meta,
+	#comments-title {
+		width: inherit;
+		margin-left: 25%;
+	}
+	.entry-title {
+		margin-left: 0;
+	}
+	.entry-content {
+		float: none;
+	}
+	footer.entry-meta {
+		float: none;
+		text-align: left;
+		margin-bottom: 1%;
+		span {
+			display: inline;
+		}
+	}
+	.summary-thought {
+		clear: both;
+		margin-left: 25%;
+		text-align: right;
+	}
+	.hentry {
+		padding: 0;
+	}
 }
 
 

@@ -19,10 +19,10 @@ get_header(); ?>
 						<span class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Previous', 'twentyeleven' ) ); ?></span>
 						<span class="nav-next"><?php next_post_link( '%link', __( 'Next <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?></span>
 					</nav><!-- #nav-single -->
-
+                    <p class="summary-thought"><?php echo get_post_meta($post->ID, 'Summarising Thought', true); ?></p>
 					<?php get_template_part( 'content', 'single' ); ?>
 
-					<?php comments_template( '', true ); ?>
+					<?php // comments_template( '', true ); ?>
 
 				<?php endwhile; // end of the loop. ?>
 
