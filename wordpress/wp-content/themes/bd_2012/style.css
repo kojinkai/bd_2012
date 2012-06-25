@@ -237,7 +237,7 @@ td { vertical-align: top; }
 /* ==|== Structure ==========================================================
 ========================================================================== */
 body {
-  background: url('img/textures/fabric_texture.png') repeat 0 0 transparent;
+  background: url('img/textures/rough_diagonal.png') repeat 0 0 transparent;
 	font-size: 62.5%;
 }
 
@@ -255,7 +255,7 @@ body {
 }
 
 #page-outer {
-	background: url('img/textures/grey_texture.png') repeat;
+	background: url('img/textures/redox.png') repeat;
 	.drop-shadow
 }
 
