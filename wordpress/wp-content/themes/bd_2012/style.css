@@ -53,7 +53,7 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
  */
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #CC3300; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
@@ -228,7 +228,7 @@ td { vertical-align: top; }
 
 /* ==|== Mixins todo =====================================================
 ========================================================================== */ 
-.drop-shadow(@x-axis: 0, @y-axis: 10px, @blur: 2px, @distance: 4px, @alpha: 0.1) {
+.drop-shadow(@x-axis: 0, @y-axis: 10px, @blur: 2px, @distance: 4px, @alpha: 0.2) {
   -webkit-box-shadow: @x-axis @y-axis @blur @distance rgba(0, 0, 0, @alpha);
   -moz-box-shadow: @x-axis @y-axis @blur @distance rgba(0, 0, 0, @alpha);
   box-shadow: @x-axis @y-axis @blur @distance rgba(0, 0, 0, @alpha);
@@ -246,6 +246,7 @@ body {
   margin: 0 auto;
   padding: 0 30px;
   background: url('img/legacy/red_perforated_bg.png') repeat-y top right transparent;
+	position: relative;
 }
 
 .multiplebgs #wrapper {
@@ -257,6 +258,8 @@ body {
 #page-outer {
 	background: url('img/textures/redox.png') repeat;
 	.drop-shadow
+	position: relative;
+	z-index:20;
 }
 
 #page {
@@ -267,35 +270,161 @@ body {
 
 .boxshadow {
 	#page {
-	.drop-shadow
+	.drop-shadow;
+	position: relative;
+	z-index: 50;
 	}
 }
 
-/* header */
+/*  =header */
 #main-header {
-	width: 105.6%;
+	width: 100%;
+	height: 100px;
 	margin: 0 auto;
 	position: relative;
-	right: 4.7%;
-	padding-left: 3.5%;
+	right: 3.7%;
+	background: url('img/textures/red_paper_texture.png') 0 0 repeat;
+	padding: 5px 3em;
+	.drop-shadow(0,1px,11px, 2px, 0.35);
+}
+
+#top_nav_outer {
+	background: url('img/textures/grey_texture.png') repeat;
+	height: 95px;
 }
 
 #logo {
   width: 140px;
   height: 150px;
-	background: url('img/assets/sprite.png') 0 0 no-repeat transparent;
+	background: url('img/assets/sprite.png') 0 -12px no-repeat transparent;
+	position: relative;
+	bottom: 10px;
+	right: 7px;
+	float: left;
+}
+
+#main_nav {
+	float: left;
+	width: 65%;
+	margin-left: 9.4%;
+	.menu {
+		li {
+			float: left;
+			text-transform: uppercase;
+			margin-right: 2%;
+			padding: 4em 0;
+		}
+	}
+}
+
+/* Section #author_bio */
+#author_bio {
+	
+}
+
+/* =Footer */
+#colophon {
+	position: relative;
+	z-index: 30;
+	#site-generator {
+		background: none;
+	}
 }
 
 
+/* =Content */
+#primary {
+	float: none;
+	margin: 0;
+}
+            
+#content {
+	width: 94%;
+	margin: 0 3%;
+}
 
+.entry-main {
+	float: right;
+}
 
+.entry-meta {
+	float: left;
+	clear: none;
+	width: 20%;
+	text-align: center;
+	span {
+		display: block;
+	}
+	a {
+		text-transform: uppercase;
+	}
+}
 
+.entry-title {
+	padding-top: 0;
+	margin-left: 25%
+}
 
+.entry-content {
+	float: right;
+	width: 75%;
+	padding: 0;
+}
 
+/* =sidebar */
+#secondary {
+	position: absolute;
+	right: -23%;
+	top: 0;
+	z-index: 10;
+	padding-top: 107px;
+}                   
 
+#archives {
+	background-color: rgba(175, 44, 49, 0.94);
+	.drop-shadow();
+	text-align: center;
+	ul {
+		list-style: none;
+		padding-left: 0;
+	}
+} 
 
-
-
+/* Single */
+.singular {
+	#content {
+		margin: 0 3%;
+	}
+	.entry-header, 
+	.entry-content,
+	footer.entry-meta,
+	#comments-title {
+		width: inherit;
+		margin-left: 25%;
+	}
+	.entry-title {
+		margin-left: 0;
+	}
+	.entry-content {
+		float: none;
+	}
+	footer.entry-meta {
+		float: none;
+		text-align: left;
+		margin-bottom: 1%;
+		span {
+			display: inline;
+		}
+	}
+	.summary-thought {
+		clear: both;
+		margin-left: 25%;
+		text-align: right;
+	}
+	.hentry {
+		padding: 0;
+	}
+}
 
 
 /* ==|== media queries ======================================================
