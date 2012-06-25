@@ -257,7 +257,7 @@ body {
 
 #page-outer {
 	background: url('img/textures/redox.png') repeat;
-	.drop-shadow
+	.drop-shadow;
 	position: relative;
 	z-index:20;
 }
@@ -344,7 +344,7 @@ body {
 }
 
 .entry-main {
-	float: right;
+
 }
 
 .entry-meta {
