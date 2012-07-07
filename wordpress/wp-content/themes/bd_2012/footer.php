@@ -16,7 +16,7 @@
 	  			</div>
 	  	</footer><!-- #colophon --> 
   </div><!-- #page outer -->
-<?php get_sidebar(); ?>
+<?php // get_sidebar(); ?>
 </div><!-- #wrapper -->
 
 <?php wp_footer(); ?>

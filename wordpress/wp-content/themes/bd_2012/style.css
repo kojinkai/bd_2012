@@ -237,14 +237,14 @@ td { vertical-align: top; }
 /* ==|== Structure ==========================================================
 ========================================================================== */
 body {
-  background: url('img/textures/fabric_texture.png') repeat 0 0 transparent;
+  background: url('img/textures/rough_diagonal.png') repeat 0 0 transparent;
 	font-size: 62.5%;
 }
 
 #wrapper {
   max-width: 860px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 30px 15px;
   background: url('img/legacy/red_perforated_bg.png') repeat-y top right transparent;
 	position: relative;
 }
@@ -256,10 +256,11 @@ body {
 }
 
 #page-outer {
-	background: url('img/textures/grey_texture.png') repeat;
+	background: url('img/textures/redox.png') repeat;
 	.drop-shadow;
 	position: relative;
 	z-index:20;
+	padding-bottom: 13.5em;
 }
 
 #page {
@@ -272,7 +273,7 @@ body {
 	#page {
 	.drop-shadow;
 	position: relative;
-	z-index: 50;
+	z-index: 120;
 	}
 }
 
@@ -324,8 +325,12 @@ body {
 
 /* =Footer */
 #colophon {
-	position: relative;
-	z-index: 30;
+	position: absolute;
+	bottom: -15px;
+	z-index: 100;
+	width: 100%;
+	height: 190px;
+	background: url('img/textures/red_paper_texture.png') 0 0 repeat;
 	#site-generator {
 		background: none;
 	}
@@ -344,7 +349,7 @@ body {
 }
 
 .entry-main {
-	float: right;
+
 }
 
 .entry-meta {
