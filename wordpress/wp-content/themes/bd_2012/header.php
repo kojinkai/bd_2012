@@ -28,7 +28,8 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 	<link rel="stylesheet/less" href="<?php bloginfo('stylesheet_directory')?>/style.css">
-
+    <script type="text/javascript" src="http://use.typekit.com/elc7rhr.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <!-- All JavaScript at the bottom, except this Modernizr build. -->
 
   <?php wp_head() ?>
