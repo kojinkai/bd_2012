@@ -27,7 +27,7 @@
 			</div><!-- .entry-summary -->
 			<?php else : ?>
 			<div class="entry-content">
-				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?>
+				<?php the_excerpt( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?>
 				<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
 			</div><!-- .entry-content -->
 			<?php endif; ?> 
@@ -42,7 +42,7 @@
 			?>
 			<?php twentyeleven_posted_on(); ?>
 			<span class="cat-links">
-				<?php printf( __( '<span class="%1$s">in the category</span> %2$s', 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-cat-links', $categories_list );
+				<?php printf( __( '<span class="%1$s">in the category of</span> %2$s', 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-cat-links', $categories_list );
 				$show_sep = true; ?>
 			</span>
 			<?php endif; // End if categories ?>
