@@ -276,7 +276,7 @@ body {
 	.drop-shadow;
 	position: relative;
 	z-index:20;
-	padding-bottom: 13.5em;
+	padding: 0 20px 13.5em;
 }
 
 #page {
@@ -350,6 +350,7 @@ body {
 /* =Footer */
 #colophon {
 	position: absolute;
+	left: 0;
 	bottom: -15px;
 	z-index: 30;
 	width: 100%;
@@ -421,6 +422,10 @@ body {
 	padding: 0;
 }
 
+.hentry, .no-results {
+	border-bottom: 1px dashed #DDD;
+}
+
 /* =sidebar */
 #secondary {
 	position: absolute;
@@ -440,7 +445,7 @@ body {
 	}
 } 
 
-/* Single */
+/* =Single */
 .singular {
 	#content {
 		margin: 0 3%;
@@ -451,6 +456,9 @@ body {
 	#comments-title {
 		width: inherit;
 		margin-left: 25%;
+	}
+	.entry-header {
+		margin-bottom: 1.5em;
 	}
 	.entry-title {
 		margin-left: 0;
@@ -470,6 +478,8 @@ body {
 		clear: both;
 		margin-left: 25%;
 		text-align: right;
+		font-size: 1.6em;
+		font-style: italic;
 	}
 	.hentry {
 		padding: 0;
@@ -484,7 +494,10 @@ body {
    ========================================================================== */
 
 @media only screen and (max-width: 768px) {
-  /* Style adjustments for viewports that meet the condition */
+  /* Style adjustments for viewports that meet the condition */ 
+ 	body {
+	 padding: 0 0.5em; 
+	}
 	.entry-content {
 		float: none;
 		width: 100%;
@@ -514,6 +527,10 @@ body {
 	.entry-header .entry-meta {
 		padding-right: 0;
 	}
+}
+
+@media only screen and (max-width: 600px) {  
+
 }
 
 

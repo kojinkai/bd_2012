@@ -42,7 +42,7 @@
 			?>
 			<?php twentyeleven_posted_on(); ?>
 			<span class="cat-links">
-				<?php printf( __( '<span class="%1$s">in the category of</span> %2$s', 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-cat-links', $categories_list );
+				<?php printf( __( '<span class="%1$s">categorized as</span> %2$s', 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-cat-links', $categories_list );
 				$show_sep = true; ?>
 			</span>
 			<?php endif; // End if categories ?>
