@@ -312,7 +312,7 @@ body {
 
 #logo {
   width: 140px;
-  height: 150px;
+  height: 137px;
 	background: url('img/assets/sprite.png') 0 -12px no-repeat transparent;
 	position: relative;
 	bottom: 10px;
@@ -400,6 +400,34 @@ body {
 		font-style: normal;
 		font-weight: normal;
 	}
+	.pub_date {
+    background: url('img/assets/sprite.png') no-repeat 6px -349px transparent;
+    display: block;
+    width: 95px;
+    height: 80px;
+    padding-top: 10px;
+    margin-top: 7px;
+    float: right;
+    clear: both;
+    a {
+      display: block;
+      text-align: center;
+      line-height: 1;
+      color: rgba(251, 250, 245, 0.84);
+      font-size: 1.4em;
+      width: 70%;
+      margin-left: 16%;
+      .transitionall();  
+      text-decoration: none;
+      text-shadow: 1px 1px #5D5D5D, 2px 2px #5D5D5D;
+      :hover {
+        text-decoration: none;
+      }
+      :visited {
+        color: #FBFAF5;
+      }
+    }
+  }
 }
 
 .entry-title {
@@ -413,6 +441,11 @@ body {
 		text-transform: uppercase;
 		color: #333;
 		font-weight: normal;
+	}
+	:hover, 
+	:focus, 
+	:active {
+	  color: #DDD;
 	}
 }
 
