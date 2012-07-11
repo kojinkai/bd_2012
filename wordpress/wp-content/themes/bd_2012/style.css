@@ -627,9 +627,8 @@ body {
 
 @media only screen and (max-width: 480px) {
 	#logo {
-		margin: 0;
-		right: 47px;
-		.transitionall();
+		background-position: -5px -439px;
+		right: 112px;
 	}
 }
 
