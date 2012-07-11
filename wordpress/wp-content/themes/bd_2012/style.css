@@ -532,6 +532,9 @@ body {
  	body {
 	 padding: 0 0.5em; 
 	}
+	#main {
+		padding-top: 4.625em;
+	}
 	.entry-content {
 		float: none;
 		width: 100%;
@@ -551,10 +554,25 @@ body {
 		font-family: "adobe-garamond-pro";
 		font-style: italic;
 		}
+		.pub_date {
+			background-position: -5px -436px;
+			width: 100%;
+			height: 32px;
+			float: none;
+			padding-left: 55px;
+			a {
+				width: 100%;
+				text-align: left;
+				margin-left: 0;
+				text-shadow: none;
+				color: #A9A9A9;  
+			}
+		}
 		a {
-			font-family: "adobe-garamond-pro";
+			font-family: "adobe-garamond-pro-1","adobe-garamond-pro-2","Adobe Garamond Pro","Georgia","Times",serif;
 			font-style: italic;
 			text-transform: lowercase;
+
 		}
 	}
 	.entry-title,
@@ -562,7 +580,7 @@ body {
 		padding-right: 0;
 	}
 	#top_nav_outer {
-	 height: 210px; 
+	 height: 165px; 
 	}
 	#logo {
 	  background-position-y: -147px;
@@ -578,7 +596,7 @@ body {
 	  ul {
 	    padding-left: 1em;
 	    position: relative;
-	    bottom: 6em;
+	    bottom: 10em;
 	  }
 	  .menu li {
   	  width: 47.5%;
@@ -598,10 +616,22 @@ body {
     height: 89px;
 	}
 	#top_nav_outer {
-    height: 180px;
+    height: 150px;
   }
+	#main_nav {
+		ul {
+			bottom: 8em;
+		}
+	}
 }
 
+@media only screen and (max-width: 480px) {
+	#logo {
+		margin: 0;
+		right: 47px;
+		.transitionall();
+	}
+}
 
 
 /* ==|== non-semantic helper classes ========================================
