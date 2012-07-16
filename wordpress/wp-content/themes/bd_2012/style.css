@@ -55,7 +55,7 @@ body { margin: 0; font-size: 1em; line-height: 1.4; font-family: 'Adobe Garamond
  */
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #CC3300; color: #fff; text-shadow: none; }
+::selection { background: @bdred; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
@@ -63,7 +63,7 @@ body { margin: 0; font-size: 1em; line-height: 1.4; font-family: 'Adobe Garamond
    ========================================================================== */
 
 a { color: #00e; }
-a:visited { color: #C30; }
+a:visited { color: @bdred; }
 a:hover { color: #06e; }
 a:focus { outline: thin dotted; }
 
@@ -230,7 +230,7 @@ td { vertical-align: top; }
 
 /************************* My styles ***************************************/ 
 
-/* ==|== Mixins todo =====================================================
+/* ==|== Mixins / variables =================================================
 ========================================================================== */ 
 .drop-shadow(@x-axis: 0, @y-axis: 10px, @blur: 2px, @distance: 4px, @alpha: 0.2) {
   -webkit-box-shadow: @x-axis @y-axis @blur @distance rgba(0, 0, 0, @alpha);
@@ -238,11 +238,11 @@ td { vertical-align: top; }
   box-shadow: @x-axis @y-axis @blur @distance rgba(0, 0, 0, @alpha);
 }
 
-.transitionall(@duration: 0.2s) {
-	-webkit-transition: all @duration ease-in; 
-		 -moz-transition: all @duration ease-in;
-			-ms-transition: all @duration ease-in;
-			 -o-transition: all @duration ease-in; 
+.transition(@type: all, @duration: 0.2s, @easing: ease-in) {
+	-webkit-transition: @type @duration @easing; 
+		 -moz-transition: @type @duration @easing;
+			-ms-transition: @type @duration @easing;
+			 -o-transition: @type @duration @easing; 
 }
 
 .inset-shadow(@x-axis: 0, @y-axis: 10px, @blur: 2px, @distance: 4px, @alpha: 0.2, @inset: inset) {
@@ -250,6 +250,9 @@ td { vertical-align: top; }
   -moz-box-shadow: @x-axis @y-axis @blur @distance rgba(0, 0, 0, @alpha);
   box-shadow: @x-axis @y-axis @blur @distance rgba(0, 0, 0, @alpha);
 }
+
+@black: #333;
+@bdred: #B33309;
 
 /* ==|== Structure ==========================================================
 ========================================================================== */
@@ -332,7 +335,7 @@ body {
 	float: left;
 	width: 65%;
 	margin-left: 9.4%;
-	.transitionall();
+	.transition();
 	.menu {
 		li {
 			float: left;
@@ -342,10 +345,15 @@ body {
 			padding: 1em 0;
 /*			text-shadow: 1px 1px #2D5A75, 2px 2px #2D5A75, 3px 3px #2D5A75, 4px 4px #2D5A75, 5px 5px #2D5A75, 6px 6px #2D5A75;  */
 			a {
-				color: #333;
-				:hover {
-					color: #333
+				color: @black	;
+				&:hover {
+					color: @black;
+					text-decoration: none;
+					border-bottom: 4px solid @black;
 				}
+			}
+			.current-menu-item {
+				border-bottom: 4px solid @black;
 			}
 		}
 	}
@@ -390,7 +398,7 @@ body {
 .entry-header,
 .entry-content,
 .entry-meta {
-	.transitionall;
+	.transition();
 }
 
 
@@ -426,7 +434,7 @@ body {
       font-size: 1.4em;
       width: 70%;
       margin-left: 16%;
-      .transitionall();  
+      .transition();  
       text-decoration: none;
       text-shadow: 1px 1px #5D5D5D, 2px 2px #5D5D5D;
       :hover {
@@ -443,19 +451,22 @@ body {
 	padding-top: 0;
 	margin-left: 25%;
 	font-size: 4em;
-	border-bottom: 4px solid #C30;
+	border-bottom: 4px solid @bdred;
 	padding-bottom: 0;
 	line-height: normal;
+	text-transform: uppercase;
+	color: @black;
+	font-weight: normal;
 	a {
 		text-transform: uppercase;
-		color: #333;
+		color: @black;
 		font-weight: normal;
-	}
-	:hover, 
-	:focus, 
-	:active {
-	  color: #DDD;
-	}
+		.transition(color, 0.2s);
+		&:hover, 
+		&:active {
+		  color: @bdred;
+		}
+	}	
 }
 
 .entry-content {
@@ -504,9 +515,16 @@ body {
 	}
 	.entry-title {
 		margin-left: 0;
+		font-weight: normal;
+		font-size: 4em;
 	}
 	.entry-content {
 		float: none;
+	}
+	.entry-meta {
+		a {
+			text-transform: lowercase;
+		}
 	}
 	footer.entry-meta {
 		float: none;
@@ -528,6 +546,28 @@ body {
 	}
 }
 
+/* =Comment */ 
+#respond {
+	width: 64.4%;
+	margin-bottom: 7em;
+	p {
+		margin: 0;
+	}
+	.form-submit {
+		float: none;
+		margin: 0;
+		position: relative;
+		top: 5em;
+		#submit {
+			padding: 5px;
+			position: inherit;
+			left: 0;          
+			margin: 0;
+			display: block;
+			margin: auto;
+		}
+	}
+}
 
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
@@ -596,7 +636,8 @@ body {
 				text-align: left;
 				margin-left: 0;
 				text-shadow: none;
-				color: #A9A9A9;  
+				color: #A9A9A9;
+				font-size: 1.2em;  
 			}
 		}
 		a {
