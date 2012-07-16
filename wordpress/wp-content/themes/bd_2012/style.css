@@ -496,8 +496,8 @@ body {
 	.entry-content,
 	footer.entry-meta,
 	#comments-title {
-		width: inherit;
-		margin-left: 25%;
+/*    width: inherit;
+    margin-left: 25%;*/
 	}
 	.entry-header {
 		margin-bottom: 1.5em;
