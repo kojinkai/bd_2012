@@ -1,5 +1,6 @@
 	  	</div><!-- #main -->
-   	</div><!-- #page --> 
+   	</div><!-- #page -->
+   	<img class="page_overlap" src="<?php bloginfo('stylesheet_directory')?>/img/assets/page_overlap.png" alt="page overlap" />
 	  	<footer id="colophon" role="contentinfo">
 
 	  			<?php
