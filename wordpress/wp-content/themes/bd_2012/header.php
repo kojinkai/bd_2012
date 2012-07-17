@@ -58,9 +58,4 @@
 				<nav>
             </div>
 	  	</header><!-- #branding -->
-        
-		<section id="author_bio">
-			
-		</section>
-
-	  	<div id="main">  
+      <a class="data-toggle" data-toggle="collapse" data-target=".nav-collapse">Archives</a>
