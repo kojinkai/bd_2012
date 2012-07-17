@@ -315,7 +315,7 @@ body {
 	margin: 0 auto;
 	position: relative;
 	right: 3.7%;
-	z-index: 50;
+	z-index: 60;
 	background: url('img/textures/red_paper_texture.png') 0 0 repeat;
 	padding: 5px 3.7% 10px;
 	.drop-shadow(0,1px,11px, 2px, 0.35);
@@ -482,6 +482,7 @@ body {
 
 /* =sidebar */
 #secondary {
+  min-width: 135px;
 	position: absolute;
 	right: -30%;
 	top: 0;
@@ -508,16 +509,18 @@ body {
 .data-toggle {
   background: url('http://bd.local/wp-content/themes/bd_2012/img/assets/sprite.png') -147px -45px no-repeat;
   display: none;
-  width: 135px;
+  visibility: hidden;
+  width: 93px;
+  height: 47px;
   color: @bdwhite;
   font-size: 2em;
   font-weight: bold;
   font-style: italic;
-  padding-left: 40px;
+  padding-left: 85px;
   position: absolute;
-  right: -48px;
-  height: 47px;
+  right: -16px;
   top: 107px;
+  z-index: 50;
   line-height: 1.9;
   cursor: pointer;
   &:hover {
@@ -611,8 +614,20 @@ body {
    Modify as content requires.
    ========================================================================== */
 @media only screen and (max-width: 1225px) {
+  #secondary {
+    display: none;
+    right: -7.9%;
+    #archives {
+      .widget-title {
+        /* hide from screenreaders - important */
+        display: none !important;
+        visibility: hidden;
+      }
+    }
+  }
   .data-toggle {
     display: block;
+    visibility: visible;
   }
 }
 
@@ -717,6 +732,9 @@ body {
   	  border: 1px dashed #DDD;
   	}
   }
+  .data-toggle {
+    top: 176px;
+  }
 }
 
 @media only screen and (max-width: 600px) {  
@@ -742,6 +760,9 @@ body {
 		ul {
 			bottom: 8em;
 		}
+	}
+	.data-toggle {
+	  top: 162px;
 	}
 }
 
