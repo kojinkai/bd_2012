@@ -521,11 +521,13 @@ body {
 	.entry-content {
 		float: none;
 	}
-	.entry-meta {
-		a {
-			text-transform: lowercase;
-		}
-	}
+  .entry-meta {
+    .pub_date {
+      background-position: -144px 2px;
+      width: 145px;
+      height: 45px;
+    } 
+  }
 	footer.entry-meta {
 		float: none;
 		text-align: left;
