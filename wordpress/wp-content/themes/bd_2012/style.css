@@ -54,8 +54,8 @@ body { margin: 0; font-size: 1em; line-height: 1.4; font-family: 'Adobe Garamond
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: @bdred; color: #fff; text-shadow: none; }
+::-moz-selection { background: #D9D9D9; color: #fff; text-shadow: none; }
+::selection { background: #D9D9D9; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
@@ -482,18 +482,24 @@ body {
 
 /* =sidebar */
 #secondary {
-  min-width: 135px;
+  width: 162px;
 	position: absolute;
 	right: -30%;
 	top: 0;
 	z-index: 30;
+	.transition();
+	&:after {
+	  content: url('img/assets/banner_points.png') no-repeat 0 0 transparent;
+	  position: relative;
+    top: 2px;
+	}
 }                   
 
 #archives {
-	background-color: rgba(175, 44, 49, 0.94);
-	padding-top: 11.5em;
-	.drop-shadow();
+	background: url('img/assets/banner_strip.png') repeat-y 0 0 transparent;
+	padding: 11.5em 0 3em;
 	text-align: center;
+	margin-bottom: -2px;
 	ul {
 		list-style: none;
 		padding-left: 0;
@@ -510,15 +516,15 @@ body {
   background: url('http://bd.local/wp-content/themes/bd_2012/img/assets/sprite.png') -147px -45px no-repeat;
   display: none;
   visibility: hidden;
-  width: 93px;
+  width: 163px;
   height: 47px;
   color: @bdwhite;
   font-size: 2em;
   font-weight: bold;
   font-style: italic;
-  padding-left: 85px;
+  padding-left: 45px;
   position: absolute;
-  right: -16px;
+  right: -18px;
   top: 107px;
   z-index: 50;
   line-height: 1.9;
@@ -613,11 +619,20 @@ body {
    This example overrides the primary ('mobile first') styles
    Modify as content requires.
    ========================================================================== */
-@media only screen and (max-width: 1225px) {
+@media only screen and (max-width: 1235px) {
   #secondary {
-    display: none;
+    top: -50%;
     right: -7.9%;
+    &.shown {
+      top: 5%;
+    }
+    &:after {
+      position: relative;
+      right: -4px;
+    }
     #archives {
+      position: relative;
+      right: -4px;
       .widget-title {
         /* hide from screenreaders - important */
         display: none !important;

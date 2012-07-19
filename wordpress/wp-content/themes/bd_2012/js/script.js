@@ -2,17 +2,32 @@
 
 */
 
-var BD = BD || {};  
+var BD_2012 = BD_2012 || {};  
 // here a namespace object is passed as a function  
 // parameter, where we assign public methods and  
 // properties to it  
 (function( o ){  
-    o.foo = "foo";  
+    o.showArchives = function() {
+      $('.data-toggle','#page').click(function() {
+        console.log('click');
+        var $t = $(this);
+        if ( $t.text() === "Archives" ) {
+          $t.text('Hide Archives');
+        }
+        else if ( $t.text() === "Hide Archives" ) {
+          $t.text('Archives');
+        }
+        $('#secondary').toggleClass('shown');
+      });
+    };  
     o.bar = function(){  
         return "bar";  
     };  
-})(BD);  
-console.log(BD);
+})(BD_2012);
+
+jQuery(function($) {
+  BD_2012.showArchives();
+});
 
 
 
