@@ -9,7 +9,6 @@ var BD_2012 = BD_2012 || {};
 (function( o ){  
     o.showArchives = function() {
       $('.data-toggle','#page').click(function() {
-        console.log('click');
         var $t = $(this);
         if ( $t.text() === "Archives" ) {
           $t.text('Hide Archives');
@@ -19,10 +18,7 @@ var BD_2012 = BD_2012 || {};
         }
         $('#secondary').toggleClass('shown');
       });
-    };  
-    o.bar = function(){  
-        return "bar";  
-    };  
+    };    
 })(BD_2012);
 
 jQuery(function($) {
