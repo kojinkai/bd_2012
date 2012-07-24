@@ -36,3 +36,17 @@ function twentyeleven_posted_on() {
 	);
 }
 endif;
+
+
+// add the correct IR classes to the prev and next post links
+function filter_next_post_link($link) {
+    $link = str_replace("rel=", 'class="ir" rel=', $link);
+    return $link;
+}
+add_filter('next_post_link', 'filter_next_post_link');
+
+function filter_previous_post_link($link) {
+    $link = str_replace("rel=", 'class="ir" rel=', $link);
+    return $link;
+}
+add_filter('previous_post_link', 'filter_previous_post_link');

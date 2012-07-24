@@ -16,7 +16,7 @@ var BD_2012 = BD_2012 || {};
         else if ( $t.text() === "Hide Archives" ) {
           $t.text('Archives');
         }
-        $('#secondary').toggleClass('shown');
+        $('#main-aside').toggleClass('shown');
       });
     };    
 })(BD_2012);

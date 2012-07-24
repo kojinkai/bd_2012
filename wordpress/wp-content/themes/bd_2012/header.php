@@ -40,12 +40,20 @@
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div id="wrapper">
   <div id="page-outer" class="hfeed">
+    <?php get_sidebar(); ?>
+    <?php if ( is_single() ) { ?>
+      <nav id="nav-single">
+				<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
+				<span class="nav-previous"><?php previous_post_link( '%link', __( 'Previous', 'twentyeleven' ) ); ?></span>
+				<span class="nav-next"><?php next_post_link( '%link', __( 'Next', 'twentyeleven' ) ); ?></span>
+			</nav><!-- #nav-single -->
+    <?php } ?>
 	<div id="page" class="clearfix">
 		<nav id="access" role="navigation">
 			<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
 			<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
-			<div class="skip-link"><a class="assistive-text" href="#content" title=""></a></div>
-			<div class="skip-link"><a class="assistive-text" href="#secondary" title=""></a></div>
+			<div class="skip-link"><a class="assistive-text" href="#content" title="main-content"></a></div>
+			<div class="skip-link"><a class="assistive-text" href="#main-aside" title="archives"></a></div>
 		</nav><!-- #access -->
 	  	<header id="main-header" role="banner">
         	<div id="top_nav_outer">
