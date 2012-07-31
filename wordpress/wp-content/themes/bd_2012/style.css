@@ -46,7 +46,7 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10
 
 html, button, input, select, textarea { font-family: sans-serif; color: #333; }
 
-body { margin: 0; font-size: 1em; line-height: 1.4; font-family: 'Adobe Garamond Pro', Georgia, Times, 'sans-serif'; }
+body { margin: 0; font-size: 1em; padding: 0; line-height: 1.4; font-family: 'Adobe Garamond Pro', Georgia, Times, 'sans-serif'; }
 
 #access { margin: 0 auto; }
 
@@ -382,6 +382,9 @@ body {
 	}
 }
 
+#network-aside {
+	background: #AAA;
+}
 
 /* =Content */
 #primary {
@@ -436,7 +439,6 @@ body {
       color: rgba(251, 250, 245, 0.84);
       font-size: 1.4em;
       width: 70%;
-      margin-left: 16%;
       .transition();  
       text-decoration: none;
       text-shadow: 1px 1px #5D5D5D, 2px 2px #5D5D5D;

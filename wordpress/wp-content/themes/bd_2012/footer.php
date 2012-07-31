@@ -1,25 +1,27 @@
    	</div><!-- #page -->
    	<img class="page_overlap" src="<?php bloginfo('stylesheet_directory')?>/img/assets/page_overlap.png" alt="page overlap. Visual, non-semantic content" />
    	<?php get_sidebar(); ?>
-	  	<footer id="colophon" role="contentinfo">
+  	<footer id="colophon" role="contentinfo">
 
-	  			<?php
-	  				/* A sidebar in the footer? Yep. You can can customize
-	  				 * your footer with three columns of widgets.
-	  				 */
-	  				if ( ! is_404() )
-	  					get_sidebar( 'footer' );
-	  			?>
+  			<?php
+  				/* A sidebar in the footer? Yep. You can can customize
+  				 * your footer with three columns of widgets.
+  				 */
+  				if ( ! is_404() )
+  					get_sidebar( 'footer' );
+  			?>
 
-	  			<div id="site-generator">
-	  				<?php do_action( 'twentyeleven_credits' ); ?>
-	  				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>
-	  			</div>
-	  	</footer><!-- #colophon --> 
+  			<div id="site-generator">
+  				<?php do_action( 'twentyeleven_credits' ); ?>
+  				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>
+  			</div>
+  	</footer><!-- #colophon -->
   </div><!-- #page outer -->
 <?php // get_sidebar(); ?>
 </div><!-- #wrapper -->
-
+<aside id="network-aside">
+ <p>Network area</p>
+</aside>
 <?php wp_footer(); ?>
 <!-- JavaScript at the bottom for fast page loading -->
 
