@@ -20,7 +20,12 @@
 <?php // get_sidebar(); ?>
 </div><!-- #wrapper -->
 <aside id="network-aside">
- <p>Network area</p>
+ <?php wp_list_bookmarks( array (
+							'category_name'    => 'Network',
+							'category_before'  => '',
+							'category_after'   => '',
+							'title_before'     => '<h2>',
+							'title_after'      => '</h2>' ));?>
 </aside>
 <?php wp_footer(); ?>
 <!-- JavaScript at the bottom for fast page loading -->
