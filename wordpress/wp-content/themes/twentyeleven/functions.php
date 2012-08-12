@@ -585,7 +585,7 @@ function twentyeleven_body_classes( $classes ) {
 	if ( function_exists( 'is_multi_author' ) && ! is_multi_author() )
 		$classes[] = 'single-author';
 
-	if ( is_singular() && ! is_home() && ! is_page_template( 'showcase.php' ) && ! is_page_template( 'sidebar-page.php' ) )
+	if ( is_singular() && ! is_home() && ! is_page_template( 'showcase.php' ) && ! is_page_template( 'sidebar-page.php' ) && ! is_page_template( 'categories-home.php' ) && ! is_page_template( 'about-page.php' ) )
 		$classes[] = 'singular';
 
 	return $classes;
