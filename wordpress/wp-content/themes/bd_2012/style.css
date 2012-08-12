@@ -436,7 +436,11 @@ body {
     margin-top: 7px;
     float: right;
     clear: both;
-    a {
+		span {
+			display: block;
+			font-style : normal;
+		}
+    a, p {
       text-align: center;
       line-height: 1;
       color: rgba(251, 250, 245, 0.84);
@@ -903,8 +907,30 @@ body {
 pre.prettyprint {
   .inset-shadow();
   /*box-shadow: 1px 1px 11px 1px rgba(0,0,0,0.15) inset;*/
-}
+} 
+ 
+/* category page */
 
+
+
+/* =about page */
+#profile-image {
+	width: 20%;
+	float: left;
+	text-align: center;
+	&>div {
+
+	}
+	img {
+		border: 4px solid #B33309;
+	}
+}                    
+
+#bio {
+	float: right;
+	width: 75%;
+	padding: 0;
+}
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
    This example overrides the primary ('mobile first') styles
