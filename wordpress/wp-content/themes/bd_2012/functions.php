@@ -50,3 +50,13 @@ function filter_previous_post_link($link) {
     return $link;
 }
 add_filter('previous_post_link', 'filter_previous_post_link');
+
+// filter out uneeded classes
+function bd_body_class($wp_classes, $extra_classes)
+{
+    // List of classes allowed
+    $whitelist = array();
+    $wp_classes = array_intersect($wp_classes, $whitelist);
+    return array_merge($wp_classes);
+}
+add_filter('body_class', 'bd_body_class', 10, 2);  
