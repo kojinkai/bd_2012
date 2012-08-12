@@ -36,7 +36,7 @@
 				    echo '<header class="entry-header"><h1 class="entry-title"><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a></h1></header>';;
 					echo '<div class="entry-main">';
 				    echo '<div class="entry-content"><p>'. $category->description . '</p></div>';
-				    echo '<footer class="entry-meta"><div class="category_count"><p>'. $category->count . '</p></div></footer>';
+				    echo '<footer class="entry-meta"><div class="category_count"><p>'. $category->count . '<span>POSTS</span></p></div></footer>';
 					echo '</div>';
 				  	echo '</article>'; }
 				
