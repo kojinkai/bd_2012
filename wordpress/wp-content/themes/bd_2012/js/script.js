@@ -1,4 +1,4 @@
-/* Author: Lewis Nixon
+ /* Author: Lewis Nixon
 
 */
 
@@ -33,7 +33,7 @@ var BD_2012 = BD_2012 || {};
           $mainAside.insertAfter($dataToggle);
         }
         else if ( w > 1235 ) {
-          $mainAside.insertBefore('#colophon');
+          $mainAside.insertBefore('#site-info');
         }
       }
     };
