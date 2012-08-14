@@ -51,12 +51,18 @@ function filter_previous_post_link($link) {
 }
 add_filter('previous_post_link', 'filter_previous_post_link');
 
-// filter out uneeded classes
-function bd_body_class($wp_classes, $extra_classes)
-{
-    // List of classes allowed
-    $whitelist = array();
-    $wp_classes = array_intersect($wp_classes, $whitelist);
-    return array_merge($wp_classes);
+
+function bd_body_classes( $classes ) {
+
+	if ( function_exists( 'is_multi_author' ) && ! is_multi_author() )
+		$classes[] = 'single-author';
+
+	if ( is_singular() && ! is_home() ) {
+		if (! is_page_template( 'showcase.php' ) && ! is_page_template( 'sidebar-page.php' ) && ! is_page_template( 'categories-home.php' ) && ! is_page_template( 'about-page.php' ) ) {
+			$classes[] = 'singular';
+		}
+	}
+	return $classes;
 }
-add_filter('body_class', 'bd_body_class', 10, 2);  
+remove_filter( 'body_class', 'twentyeleven_body_classes' );
+add_filter( 'body_class', 'bd_body_classes' );
