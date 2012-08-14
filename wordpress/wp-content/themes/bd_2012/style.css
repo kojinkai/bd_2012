@@ -111,6 +111,22 @@ p {
 	font-size: 2em;
 	line-height: 1.3;
 }
+
+/* =============================================================================
+   Headings
+   ========================================================================== */
+h1 {
+	font-size: 1.8em;
+}
+h2 {
+	font-size: 1.6em;
+}
+h3 {
+	font-size: 1.4em
+}
+h4 {
+	font-size: 1.2em
+}
 /* =============================================================================
    Lists
    ========================================================================== */
@@ -284,12 +300,21 @@ body {
     url('img/textures/bg_red_texture_tile.png') 100% 0 repeat-y;
 }
 
+.outer-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 3% 15px;
+}
+
+.inner-wrap {
+	padding: 0 3% 8.5em;
+}
+
 #page-outer {
 	background: url('img/textures/redox.png') repeat;
 	.drop-shadow;
 	position: relative;
 	z-index:20;
-	padding: 0 3% 13.5em;
 }
 
 #page {
@@ -369,7 +394,7 @@ body {
 }
 
 /* =Footer */
-#site-info {
+#colophon {
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -385,15 +410,38 @@ body {
 
 #colophon {
 	background: #AAA;
-	position: relative;
+	min-height: 160px;
+	.inner-wrap {
+		padding-top: 2em;
+	}
+}
+
+#network-links,
+#social-links {
+	float: left;
+	width: 50%;
+	ul {
+		list-style: none;
+		list-style-position: inside;
+	}
+}
+
+#social-links {
+	li {
+		float: left;
+		a {
+			background: url('img/assets/social_icons.png') 0 -31px no-repeat;
+			width: 32px;
+			height: 30px;
+			display: block;
+			&:hover {
+				background-position-y: 0; 
+			}
+		}
+	}
 }
 
 /* =Content */
-#primary {
-	float: none;
-	margin: 0;
-}
-            
 #content {
 	width: 94%;
 	margin: 0 3%;
@@ -976,8 +1024,8 @@ pre.prettyprint {
 	.page_overlap {
 	  max-width: 94.5%;
 	}
- 	#page-outer {
-			padding: 0 20px 13.5em;
+ 	.inner-wrap {
+			padding: 0 20px 8.5em;
 	}
 }
 
@@ -1091,7 +1139,7 @@ pre.prettyprint {
 	#wrapper {
 		padding: 0 20px 15px;
 	}
-	#page-outer {
+	.inner-wrap {
 		padding: 0 3% 13.5em;
 	}
 	#main-header {

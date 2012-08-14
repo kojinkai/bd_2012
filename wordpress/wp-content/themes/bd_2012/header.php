@@ -39,7 +39,7 @@
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div id="wrapper" class="outer-wrap">
-  <div id="page-outer" class="hfeed">
+  <div id="page-outer" class="inner-wrap hfeed">
     <?php if ( is_single() ) { ?>
       <nav id="nav-single">
 				<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
