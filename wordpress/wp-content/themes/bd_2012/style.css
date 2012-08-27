@@ -505,6 +505,9 @@ body {
       }
     }
   }
+	.category_count p {
+		margin-left: 15%;
+	}
 }
 
 .entry-title {
@@ -1083,6 +1086,17 @@ pre.prettyprint {
       font-style: italic;
       text-transform: lowercase;*/
 
+		}
+		.category_count {
+			float: none;
+			background-position: -5px -436px;
+			p {
+				text-shadow: none;
+				color: @black;
+			}
+			span {
+				display: none;
+			}
 		}
 	}
 	.entry-title,
