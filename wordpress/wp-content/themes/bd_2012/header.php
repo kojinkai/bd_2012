@@ -45,7 +45,7 @@
 				<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
 				<span class="nav-previous"><?php previous_post_link( '%link', __( 'Previous', 'twentyeleven' ) ); ?></span>
 				<span class="nav-next"><?php next_post_link( '%link', __( 'Next', 'twentyeleven' ) ); ?></span>
-			</nav><!-- #nav-single -->
+	  </nav><!-- #nav-single -->
     <?php } ?>
 	<div id="page" class="clearfix">
 		<nav id="access" role="navigation">
@@ -62,7 +62,7 @@
 				<nav id="main_nav">
 				  <?php wp_nav_menu( array('menu' 		=> 'main',
 				 						   'menu_class'	=> 'clearfix menu')); ?>
-				<nav>
+				</nav>
             </div>
 	  	</header><!-- #branding -->
       <a class="data-toggle" data-toggle="collapse" data-target=".nav-collapse">Archives</a>
