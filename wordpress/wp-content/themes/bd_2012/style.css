@@ -546,7 +546,7 @@ body {
 #main-aside {
   width: 162px;
 	position: absolute;
-	right: -16%;
+	right: -140px;
 	top: 0;
 	z-index: 30;
 	.transition();
@@ -586,9 +586,9 @@ body {
   font-style: italic;
   padding-left: 45px;
   position: absolute;
-  right: -18px;
-  top: 107px;
-  z-index: 50;
+  right: -38px;
+  top: 88px;
+  z-index: 60;
   line-height: 1.9;
   cursor: pointer;
   &:hover {
@@ -990,17 +990,16 @@ pre.prettyprint {
 @media only screen and (max-width: 1235px) {
   #main-aside {
     top: -50%;
-    right: -0.38%;
+    right: -20px;
     &.shown {
       top: 5%;
     }
     &:after {
       position: relative;
-      right: -4px;
+/*      right: -16px;*/
     }
     #archives {
       position: relative;
-      right: -4px;
       .widget-title {
         /* hide from screenreaders - important */
         display: none !important;
@@ -1132,7 +1131,8 @@ pre.prettyprint {
   	}
   }
   .data-toggle {
-    top: 176px;
+    top: 175px;
+		right: -40px;
   }
   .singular {
       .pub_date {
@@ -1145,7 +1145,7 @@ pre.prettyprint {
     }
   }
   #main-aside {
-    top: 16%;
+/*		right: -4.35%;*/
   }
 }
 
@@ -1174,7 +1174,11 @@ pre.prettyprint {
 		}
 	}
 	.data-toggle {
-	  top: 162px;
+	  top: 149px;
+/*		right: -29px;*/
+	}
+	#main-aside {
+/*		right: -5.2%;*/
 	}
 }
 
