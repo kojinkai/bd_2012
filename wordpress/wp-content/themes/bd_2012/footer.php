@@ -1,7 +1,7 @@
    	</div><!-- #page -->
    	<img class="page_overlap" src="<?php bloginfo('stylesheet_directory')?>/img/assets/page_overlap.png" alt="page overlap. Visual, non-semantic content" />
    	<?php get_sidebar(); ?>
-  	<footer id="colophon" role="contentinfo">
+  	<footer id="main-footer" role="contentinfo">
 
   			<?php
   				/* A sidebar in the footer? Yep. You can can customize
@@ -10,43 +10,26 @@
   				if ( ! is_404() )
   					get_sidebar( 'footer' );
   			?>
-
-  			<div id="site-generator">
-  				<?php do_action( 'twentyeleven_credits' ); ?>
-  				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>
-  			</div>
   	</footer><!-- #colophon -->
   </div><!-- #page outer -->
 <?php // get_sidebar(); ?>
 </div><!-- #wrapper -->
 <aside id="network-aside">
-  <div class="outer-wrap">
-    <div class="inner-wrap">
-      <div id="network-links">
-        <?php wp_list_bookmarks( array (
-      							'category_name'    => 'Network',
-      							'category_before'  => '',
-      							'category_after'   => '',
-      							'title_before'     => '<h2>',
-      							'title_after'      => '</h2>'));?>
-      </div>
-      <div id="social-links">
-        <ul>
-        <?php
-        $bookmarks = get_bookmarks( array(
-                'orderby'        => 'name',
-                'order'          => 'ASC',
-                'category_name'  => 'Social'
-                                  ));
+  <div id="social-links">
+    <ul class="clearfix">
+    <?php
+    $bookmarks = get_bookmarks( array(
+            'orderby'        => 'name',
+            'order'          => 'ASC',
+            'category_name'  => 'Social'
+                              ));
 
-        // Loop through each bookmark and print formatted output
-        foreach ( $bookmarks as $bm ) { 
-            printf( '<li><a class="ir" href="%s">%s</a></li>', $bm->link_url, __($bm->link_name) );
-        }
-        ?>
-      </ul>
-      </div>
-    </div>
+    // Loop through each bookmark and print formatted output
+    foreach ( $bookmarks as $bm ) { 
+        printf( '<li><a class="ir" href="%s">%s</a></li>', $bm->link_url, __($bm->link_name) );
+    }
+    ?>
+    </ul>
   </div>
 </aside>
 <?php wp_footer(); ?>

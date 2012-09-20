@@ -394,7 +394,7 @@ body {
 }
 
 /* =Footer */
-#colophon {
+#main-footer {
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -408,25 +408,15 @@ body {
 	}
 }
 
-#colophon {
-	background: #AAA;
-	min-height: 160px;
-	.inner-wrap {
-		padding-top: 2em;
-	}
+
+.inner-wrap {
+	padding-top: 2em;
 }
 
-#network-links,
-#social-links {
-	float: left;
-	width: 50%;
-	ul {
-		list-style: none;
-		list-style-position: inside;
-	}
-}
-
-#social-links {
+#social-links ul {
+	padding: 0;
+	list-style: none;
+	list-style-position: inside;
 	li {
 		float: left;
 		a {
@@ -439,6 +429,10 @@ body {
 			}
 		}
 	}
+}
+#network-aside {
+	padding: 1em 0;
+	background: @bdwhite;
 }
 
 /* =Content */
