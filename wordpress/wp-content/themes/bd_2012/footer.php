@@ -2,35 +2,27 @@
    	<img class="page_overlap" src="<?php bloginfo('stylesheet_directory')?>/img/assets/page_overlap.png" alt="page overlap. Visual, non-semantic content" />
    	<?php get_sidebar(); ?>
   	<footer id="main-footer" role="contentinfo">
+      <div id="social-links">
+        <ul class="clearfix">
+          <?php
+            $bookmarks = get_bookmarks( array(
+                    'orderby'        => 'name',
+                    'order'          => 'ASC',
+                    'category_name'  => 'Social'
+                                      ));
 
-  			<?php
-  				/* A sidebar in the footer? Yep. You can can customize
-  				 * your footer with three columns of widgets.
-  				 */
-  				if ( ! is_404() )
-  					get_sidebar( 'footer' );
-  			?>
-  	</footer><!-- #colophon -->
+            // Loop through each bookmark and print formatted output
+            foreach ( $bookmarks as $bm ) { 
+                printf( '<li><a class="ir" href="%s">%s</a></li>', $bm->link_url, __($bm->link_name) );
+            }
+          ?>
+        </ul>
+      </div>
+  	</footer><!-- #main-footer -->
   </div><!-- #page outer -->
-<?php // get_sidebar(); ?>
 </div><!-- #wrapper -->
 <aside id="network-aside">
-  <div id="social-links">
-    <ul class="clearfix">
-    <?php
-    $bookmarks = get_bookmarks( array(
-            'orderby'        => 'name',
-            'order'          => 'ASC',
-            'category_name'  => 'Social'
-                              ));
 
-    // Loop through each bookmark and print formatted output
-    foreach ( $bookmarks as $bm ) { 
-        printf( '<li><a class="ir" href="%s">%s</a></li>', $bm->link_url, __($bm->link_name) );
-    }
-    ?>
-    </ul>
-  </div>
 </aside>
 <?php wp_footer(); ?>
 <!-- JavaScript at the bottom for fast page loading -->
