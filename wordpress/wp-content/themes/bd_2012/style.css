@@ -42,7 +42,7 @@ audio:not([controls]) { display: none; }
  * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
  */
 
-html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: 100%;}
 
 html, button, input, select, textarea { font-family: sans-serif; color: #333; }
 
@@ -275,7 +275,7 @@ td { vertical-align: top; }
 }
 
 @black: #333;
-@bdred: #B33309;
+@bdred: #AF4D2D;
 @bdwhite: #FBFAF5;
 
 /* ==|== Structure ==========================================================
@@ -283,10 +283,12 @@ td { vertical-align: top; }
 body {
   background: url('img/textures/rough_diagonal.png') repeat 0 0 transparent;
 	font-size: 62.5%;
+	height: 100%;
 }
 
 #wrapper {
   max-width: 860px;
+  height: 100%;
   margin: 0 auto 4em;
   padding: 0 3%;
   background: url('img/legacy/red_perforated_bg.png') repeat-y top right transparent;
@@ -307,7 +309,7 @@ body {
 }
 
 .inner-wrap {
-	padding: 0 3% 8.5em;
+	padding: 0 3%;
 }
 
 #page-outer {
@@ -315,6 +317,7 @@ body {
 	.drop-shadow;
 	position: relative;
 	z-index:20;
+	height: 91%;
 }
 
 #page {
@@ -323,6 +326,7 @@ body {
 	min-height: 750px;
   margin: auto;
   position: relative;
+  height: 92%;
 }
 
 .page_overlap {
@@ -413,16 +417,15 @@ body {
 	padding-top: 2em;
 }
 
-#social-links {
-	position: absolute;
+#colophon {
+/*	position: absolute;
 	width: 1200%;
 	bottom: -46px;
-	background: white;
 	left: -1000px;
-	padding-left: 1000px;
+	padding-left: 1000px;*/
 }
 
-#social-links ul {
+#colophon ul {
 	padding: 0;
 	list-style: none;
 	list-style-position: inside;
@@ -494,12 +497,12 @@ body {
     a, p {
       text-align: center;
       line-height: 1;
-      color: rgba(251, 250, 245, 0.84);
+      color: @bdwhite;
+  		text-shadow: 1px 1px #2D5A75, 2px 2px #2D5A75, 3px 3px #2D5A75;
       font-size: 1.4em;
       width: 70%;
       .transition();  
       text-decoration: none;
-      text-shadow: 1px 1px #5D5D5D, 2px 2px #5D5D5D;
       :hover {
         text-decoration: none;
       }
@@ -642,6 +645,7 @@ body {
         color: @black;
         text-shadow:none;
         display: block;
+        width: 100%;
       }
     } 
   }

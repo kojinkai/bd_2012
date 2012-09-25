@@ -2,7 +2,7 @@
    	<img class="page_overlap" src="<?php bloginfo('stylesheet_directory')?>/img/assets/page_overlap.png" alt="page overlap. Visual, non-semantic content" />
    	<?php get_sidebar(); ?>
   	<footer id="main-footer" role="contentinfo">
-      <div id="social-links">
+      <div id="colophon">
         <ul class="clearfix">
           <?php
             $bookmarks = get_bookmarks( array(
