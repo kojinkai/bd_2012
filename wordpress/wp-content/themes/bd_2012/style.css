@@ -288,7 +288,6 @@ body {
 
 #wrapper {
   max-width: 860px;
-  height: 100%;
   margin: 0 auto 4em;
   padding: 0 3%;
   background: url('img/legacy/red_perforated_bg.png') repeat-y top right transparent;
@@ -309,7 +308,7 @@ body {
 }
 
 .inner-wrap {
-	padding: 0 3%;
+	padding: 0 20px 16.5em;
 }
 
 #page-outer {
@@ -317,7 +316,6 @@ body {
 	.drop-shadow;
 	position: relative;
 	z-index:20;
-	height: 91%;
 }
 
 #page {
@@ -326,7 +324,6 @@ body {
 	min-height: 750px;
   margin: auto;
   position: relative;
-  height: 92%;
 }
 
 .page_overlap {
@@ -404,7 +401,7 @@ body {
 	bottom: 0;
 	z-index: 30;
 	width: 100%;
-	height: 140px;
+	height: 180px;
 	background: url('img/textures/red_paper_texture.png') 0 0 repeat;
 	#site-generator {
 		background: none;
@@ -412,23 +409,16 @@ body {
 	}
 }
 
-
-.inner-wrap {
-	padding-top: 2em;
-}
-
 #colophon {
-/*	position: absolute;
-	width: 1200%;
-	bottom: -46px;
-	left: -1000px;
-	padding-left: 1000px;*/
+
 }
 
 #colophon ul {
 	padding: 0;
 	list-style: none;
 	list-style-position: inside;
+	margin: 120px 2% 0 0;
+	float: right;
 	li {
 		float: left;
 		a {
@@ -442,10 +432,6 @@ body {
 		}
 	}
 }
-/*#network-aside {
-	padding: 1em 0;
-	background: @bdwhite;
-}*/
 
 /* =Content */
 #content {
@@ -1034,7 +1020,7 @@ pre.prettyprint {
 	  max-width: 94.5%;
 	}
  	.inner-wrap {
-			padding: 0 20px 8.5em;
+			/*padding: 0 20px 16.5em;*/
 	}
 }
 
@@ -1158,10 +1144,10 @@ pre.prettyprint {
 
 @media only screen and (max-width: 600px) {  
 	#wrapper {
-		padding: 0 20px 15px;
+		padding: 0 20px;
 	}
 	.inner-wrap {
-		padding: 0 3% 13.5em;
+		padding: 0 3% 11.5em;
 	}
 	#main-header {
 		padding: 5px 5.5% 10px;
