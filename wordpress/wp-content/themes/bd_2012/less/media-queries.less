@@ -1,0 +1,206 @@
+/* ==|== media queries ======================================================
+   EXAMPLE Media Query for Responsive Design.
+   This example overrides the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (max-width: 1235px) {
+  #main-aside {
+    top: -50%;
+    right: -20px;
+    &.shown {
+      top: 5%;
+    }
+    &:after {
+      position: relative;
+    }
+    #archives {
+      position: relative;
+      .widget-title {
+        /* hide from screenreaders - important */
+        display: none !important;
+        visibility: hidden;
+      }
+    }
+  }
+  .data-toggle {
+    display: block;
+    visibility: visible;
+  }
+  .singular {
+    #nav-single {
+      top: 0;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 801px) {
+ 	#wrapper {
+		padding: 0 30px;
+	}
+	.page_overlap {
+	  max-width: 94.5%;
+	}
+ 	.inner-wrap {
+			/*padding: 0 20px 16.5em;*/
+	}
+}
+
+/* nasty MQ to fix the image size issue on screen resize */
+@media only screen and (min-width: 973px) {
+  .page_overlap {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* Style adjustments for viewports that meet the condition */ 
+ 	body {
+	 padding: 0 0.5em; 
+	}
+	#main {
+		padding-top: 4.625em;
+	}
+	.entry-content {
+		float: none;
+		width: 100%;
+	}
+	.entry-title {
+		margin-left: 0;
+	}
+	footer.entry-meta {
+		float: none;
+		width: 100%;
+		text-align: left;
+	}
+	.entry-meta {
+	  font-size: 1.2em;
+		span {
+		display: inline;
+		font-family: "adobe-garamond-pro";
+		font-style: italic;
+		}
+		.pub_date {
+			background-position: -5px -436px;
+			width: 79%;
+			height: 32px;
+			float: none;
+			padding-left: 55px;
+			text-align: left;
+			a {
+				width: 100%;
+				margin-left: 0;
+        text-shadow: none;
+				font-size: 1.8em;
+				color: @black;
+			}
+		}
+		a {
+/*      font-family: "adobe-garamond-pro-1","adobe-garamond-pro-2","Adobe Garamond Pro","Georgia","Times",serif;
+      font-style: italic;
+      text-transform: lowercase;*/
+
+		}
+		.category_count {
+			float: none;
+			background-position: -5px -436px;
+			p {
+				text-shadow: none;
+				color: @black;
+			}
+			span {
+				display: none;
+			}
+		}
+	}
+	.entry-title,
+	.entry-header .entry-meta {
+		padding-right: 0;
+	}
+	#top_nav_outer {
+	 height: 165px; 
+	}
+	#logo {
+	  background-position-y: -147px;
+    width: 115px;
+	  height: 115px;
+	  margin: 0 auto;
+	  float: none;
+	}
+	#main_nav {
+	  float: none;
+	  width: 100%;
+	  margin-left: 0;
+	  ul {
+	    padding-left: 1em;
+	    position: relative;
+	    bottom: 10em;
+	  }
+	  .menu li {
+  	  width: 47.5%;
+  	  padding: 0.5em 0;
+  	  margin-right: 0;
+  	  font-size: 2.6em;
+  	  text-align: center;
+  	  border: 1px dashed #DDD;
+  	}
+  }
+  .data-toggle {
+    top: 175px;
+		right: -40px;
+  }
+  .singular {
+      .pub_date {
+        text-align: center;
+        padding-left: 0;
+        top: -107px;
+        a {
+        display: block;
+      }
+    }
+  }
+  #main-aside {
+/*		right: -4.35%;*/
+  }
+}
+
+@media only screen and (max-width: 600px) {  
+	#wrapper {
+		padding: 0 20px;
+	}
+	.inner-wrap {
+		padding: 0 3% 11.5em;
+	}
+	#main-header {
+		padding: 5px 5.5% 10px;
+		right: 5.5%;
+	}	
+	#logo {
+    background-position-y: -259px;
+    width: 83px;
+    height: 89px;
+	}
+	#top_nav_outer {
+    height: 150px;
+  }
+	#main_nav {
+		ul {
+			bottom: 8em;
+		}
+	}
+	.data-toggle {
+	  top: 149px;
+/*		right: -29px;*/
+	}
+	#main-aside {
+/*		right: -5.2%;*/
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#logo {
+/*    background-position: -5px -439px;*/
+/*    right: 112px;*/
+      visibility: hidden;
+	}
+}
