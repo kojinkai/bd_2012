@@ -1,9 +1,8 @@
    	</div><!-- #page -->
    	<img class="page_overlap" src="<?php bloginfo('stylesheet_directory')?>/img/assets/page_overlap.png" alt="page overlap. Visual, non-semantic content" />
    	<?php get_sidebar(); ?>
-  	<footer id="main-footer" role="contentinfo">
-      <div id="colophon">
-        <!-- <h3>Follow Me</h3> -->
+  	<footer id="colophon" role="contentinfo">
+        <h3>Follow Me</h3>
         <ul class="clearfix">
           <?php
             $bookmarks = get_bookmarks( array(
@@ -18,7 +17,6 @@
             }
           ?>
         </ul>
-      </div>
   	</footer><!-- #main-footer -->
   </div><!-- #page outer -->
 </div><!-- #wrapper -->
