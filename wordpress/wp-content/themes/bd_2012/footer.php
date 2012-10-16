@@ -3,6 +3,7 @@
    	<?php get_sidebar(); ?>
   	<footer id="main-footer" role="contentinfo">
       <div id="colophon">
+        <!-- <h3>Follow Me</h3> -->
         <ul class="clearfix">
           <?php
             $bookmarks = get_bookmarks( array(
@@ -21,9 +22,6 @@
   	</footer><!-- #main-footer -->
   </div><!-- #page outer -->
 </div><!-- #wrapper -->
-<aside id="network-aside">
-
-</aside>
 <?php wp_footer(); ?>
 <!-- JavaScript at the bottom for fast page loading -->
 
