@@ -71,7 +71,11 @@ body{font-size:62.5%;height:100%;}
 #main_nav{float:left;width:65%;margin-left:9.4%;-webkit-transition:all 0.2s ease-in;-moz-transition:all 0.2s ease-in;-ms-transition:all 0.2s ease-in;-o-transition:all 0.2s ease-in;}#main_nav .menu li{float:left;text-transform:uppercase;margin-right:2%;font-size:3em;padding:1em 0;}#main_nav .menu li a{color:#333333;}#main_nav .menu li a:hover{color:#333333;text-decoration:none;border-bottom:4px solid #333333;}
 #main_nav .menu li .current-menu-item{border-bottom:4px solid #333333;}
 #main-footer{position:absolute;left:0;bottom:0;z-index:30;width:100%;height:180px;background:url('img/textures/red_paper_texture.png') 0 0 repeat;}#main-footer #site-generator{background:none;padding-top:6em;}
-#colophon ul{padding:0;list-style:none;list-style-position:inside;margin:120px 2% 0 0;float:right;}#colophon ul li{float:left;}#colophon ul li a{background:url('img/assets/social_icons.png') 0 -31px no-repeat;width:32px;height:30px;display:block;}#colophon ul li a:hover{background-position-y:0;}
+#colophon h3{color:#FBFAF5;font-size:2em;font-weight:bold;font-style:italic;}
+#colophon ul{padding:0;list-style:none;list-style-position:inside;margin:120px 2% 0 0;float:right;}#colophon ul li{float:left;}#colophon ul li a{background:url('img/assets/social_icons.png') 0 -38px no-repeat;width:39px;height:39px;display:block;}#colophon ul li a:hover{background-position-y:0;}
+#colophon ul li a[href*="flickr"]{background-position:-77px -38px;}#colophon ul li a[href*="flickr"]:hover{background-position-y:0;}
+#colophon ul li a[href*="twitter"]{background-position:-37px -38px;}#colophon ul li a[href*="twitter"]:hover{background-position-y:0;}
+#colophon ul li a[href*="linkedin"]{background-position:0px -38px;}#colophon ul li a[href*="linkedin"]:hover{background-position-y:0;}
 #content{width:94%;margin:0 3%;padding-top:8em;}
 .entry-header{margin-bottom:3em;}
 .entry-header,.entry-content,.entry-meta{-webkit-transition:all 0.2s ease-in;-moz-transition:all 0.2s ease-in;-ms-transition:all 0.2s ease-in;-o-transition:all 0.2s ease-in;}
