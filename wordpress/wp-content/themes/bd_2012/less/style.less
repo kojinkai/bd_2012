@@ -131,24 +131,54 @@ body {
 	}
 }
 
-#colophon ul {
-	padding: 0;
-	list-style: none;
-	list-style-position: inside;
-	margin: 120px 2% 0 0;
-	float: right;
-	li {
-		float: left;
-		a {
-			background: url('img/assets/social_icons.png') 0 -31px no-repeat;
-			width: 32px;
-			height: 30px;
-			display: block;
-			&:hover {
-				background-position-y: 0; 
+#colophon {
+	h3 {
+		color: #FBFAF5;
+		font-size: 2em;
+		font-weight: bold;
+		font-style: italic;
+	}
+	ul {
+		padding: 0;
+		list-style: none;
+		list-style-position: inside;
+		margin: 120px 2% 0 0;
+		float: right;
+		li {
+			float: left;
+			a {
+				background: url('img/assets/social_icons.png') 0 -38px no-repeat;
+				width: 39px;
+				height: 39px;
+				display: block;
+				&:hover {
+					background-position-y: 0; 
+				}
 			}
 		}
 	}
+}
+
+/* specific styles here for readability */
+#colophon ul li a {
+	&[href*="flickr"] {
+		background-position: -77px -38px;
+		&:hover {
+			background-position-y: 0;
+		}
+	}
+	&[href*="twitter"] {
+		background-position: -37px -38px;
+		&:hover {
+			background-position-y: 0;
+		}
+	}
+	&[href*="linkedin"] {
+		background-position: 0px -38px;
+		&:hover {
+			background-position-y: 0;
+		}
+	}		
 }
 
 /* =Content */
