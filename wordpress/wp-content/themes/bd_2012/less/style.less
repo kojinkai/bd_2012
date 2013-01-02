@@ -81,10 +81,10 @@ body {
 #logo {
   width: 140px;
   height: 137px;
-	background: url('img/assets/sprite.png') 0 -12px no-repeat transparent;
+	background: url('img/assets/new_sprite.png') 0 -12px no-repeat transparent;
 	position: relative;
 	bottom: 5px;
-	right: 5px;
+	right: -27px;
 	float: left;
 	z-index: 50;
 }
@@ -102,10 +102,10 @@ body {
 			font-size: 3em;
 			padding: 1em 0;
 			a {
+				text-decoration: none;
 				color: @black	;
 				&:hover {
 					color: @black;
-					text-decoration: none;
 					border-bottom: 4px solid @black;
 				}
 			}
@@ -216,19 +216,13 @@ body {
 		font-style: italic;
 	}
 	a {
-		text-transform: uppercase;
 		font-style: normal;
 		font-weight: normal;
+		font-size: inherit;
 	}
 	.pub_date,
 	.category_count {
-    /*background: url('img/assets/sprite.png') no-repeat 6px -349px transparent;*/
-    display: block;
-    width: 95px;
-    height: 80px;
-    margin-top: 3px;
-    float: right;
-    clear: both;
+    margin-top: -64px;
 		span {
 			display: block;
 			font-style : normal;
@@ -236,17 +230,11 @@ body {
     a, p {
       text-align: center;
       line-height: 1;
-      color: @black;
-  		/*text-shadow: 1px 1px #2D5A75, 2px 2px #2D5A75, 3px 3px #2D5A75;*/
-      font-size: 1.4em;
-      width: 70%;
+      /*color: @black;*/
       .transition();  
       text-decoration: none;
       :hover {
         text-decoration: none;
-      }
-      :visited {
-        color: @bdwhite;
       }
     }
   }
@@ -353,16 +341,13 @@ body {
 	#content {
 		margin: 0 3%;
 		position: inherit;
+		padding-top: 0;
 	}
 	.entry-header, 
 	.entry-content,
 	footer.entry-meta,
-	#comments-title {
-/*    width: inherit;
-    margin-left: 25%;*/
-	}
 	.entry-header {
-		margin-bottom: 1.5em;
+		margin: 0 0 1.5em 25%;
 	}
 	.entry-title {
 		margin-left: 0;
@@ -374,17 +359,9 @@ body {
 	}
   .entry-meta {
     .pub_date {
-      background-position: 15px -438px;
-      width: 75px;
-      height: 45px;
-      padding-top: 42px;
-      position: absolute;
-      left: 0;
+    	display: inline;
       a {
         color: @black;
-        text-shadow:none;
-        display: block;
-        width: 100%;
       }
     } 
   }
@@ -397,7 +374,8 @@ body {
 		}
 	}
 	.summary-thought {
-		clear: both;		
+		clear: both;
+		text-align: right;		
 		.titleing;
 	}
 	.hentry {
