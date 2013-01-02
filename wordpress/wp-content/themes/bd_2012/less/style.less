@@ -119,12 +119,17 @@ body {
 /* =Footer */
 #colophon {
 	position: absolute;
-	left: -1000px;
+	left: -400%;
 	bottom: 0;
 	z-index: 30;
-	width: 3000px;
+	width: 900%;
 	height: 180px;
-	background: url('img/textures/red_paper_texture.png') 0 0 repeat;
+	background: url('img/textures/redox.png') 0 0 repeat;
+	.drop-shadow(0px, 0px, 6px, 3px, 0.18);
+	&>div {
+		margin: 120px auto 0;
+		width: 120px;
+	}
 	#site-generator {
 		background: none;
 		padding-top: 6em;
@@ -145,8 +150,6 @@ body {
 		padding: 0;
 		list-style: none;
 		list-style-position: inside;
-		margin: 120px 2% 0 0;
-		float: right;
 		li {
 			float: left;
 			a {
@@ -219,12 +222,11 @@ body {
 	}
 	.pub_date,
 	.category_count {
-    background: url('img/assets/sprite.png') no-repeat 6px -349px transparent;
+    /*background: url('img/assets/sprite.png') no-repeat 6px -349px transparent;*/
     display: block;
     width: 95px;
     height: 80px;
-    padding-top: 10px;
-    margin-top: 7px;
+    margin-top: 3px;
     float: right;
     clear: both;
 		span {
@@ -234,8 +236,8 @@ body {
     a, p {
       text-align: center;
       line-height: 1;
-      color: @bdwhite;
-  		text-shadow: 1px 1px #2D5A75, 2px 2px #2D5A75, 3px 3px #2D5A75;
+      color: @black;
+  		/*text-shadow: 1px 1px #2D5A75, 2px 2px #2D5A75, 3px 3px #2D5A75;*/
       font-size: 1.4em;
       width: 70%;
       .transition();  
@@ -257,7 +259,7 @@ body {
 	padding-top: 0;
 	margin-left: 25%;
 	font-size: 4em;
-	border-bottom: 4px solid @bdred;
+	border-bottom: 4px solid @black;
 	padding-bottom: 0;
 	line-height: normal;
 	text-transform: uppercase;
