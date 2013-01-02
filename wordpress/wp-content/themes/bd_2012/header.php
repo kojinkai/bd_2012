@@ -52,6 +52,7 @@
 			<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
 			<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
 			<div class="skip-link"><a class="assistive-text" href="#content" title="main-content"></a></div>
+	
 		</nav><!-- #access -->
 	  	<header id="main-header" role="banner">
         	<div id="top_nav_outer">
@@ -64,4 +65,3 @@
 				</nav>
             </div>
 	  	</header><!-- #branding -->
-      <a class="data-toggle" data-toggle="collapse" data-target=".nav-collapse">Social</a>
