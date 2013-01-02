@@ -11,15 +11,15 @@ body {
   max-width: 860px;
   margin: 0 auto 4em;
   padding: 0 3%;
-  background: url('img/legacy/red_perforated_bg.png') repeat-y top right transparent;
+  /*background: url('img/legacy/red_perforated_bg.png') repeat-y top right transparent;*/
 	position: relative;
 	z-index: 0;
 }
 
 .multiplebgs #wrapper {
   background: 
-    url('img/textures/bg_red_texture_tile.png') 0 0 repeat-y, 
-    url('img/textures/bg_red_texture_tile.png') 100% 0 repeat-y;
+    /*url('img/textures/bg_red_texture_tile.png') 0 0 repeat-y, 
+    url('img/textures/bg_red_texture_tile.png') 100% 0 repeat-y;*/
 }
 
 .outer-wrap {
@@ -33,7 +33,7 @@ body {
 }
 
 #page-outer {
-	background: url('img/textures/redox.png') repeat;
+	background: url('img/textures/redox.png') repeat;	
 	.drop-shadow;
 	position: relative;
 	z-index:20;
@@ -67,14 +67,15 @@ body {
 	position: relative;
 	right: 3.7%;
 	z-index: 60;
-	background: url('img/textures/red_paper_texture.png') 0 0 repeat;
+	/*background: url('img/textures/red_paper_texture.png') 0 0 repeat;*/
 	padding: 5px 3.7% 10px;
-	.drop-shadow(0,1px,11px, 2px, 0.35);
+	/*.drop-shadow(0,1px,11px, 2px, 0.35);*/
 }
 
 #top_nav_outer {
 	background: @bdwhite;
 	min-height: 95px;
+	border-bottom: 1px dashed #DDD;
 }
 
 #logo {
@@ -82,8 +83,8 @@ body {
   height: 137px;
 	background: url('img/assets/sprite.png') 0 -12px no-repeat transparent;
 	position: relative;
-	bottom: 10px;
-	right: 7px;
+	bottom: 5px;
+	right: 5px;
 	float: left;
 	z-index: 50;
 }
@@ -118,10 +119,10 @@ body {
 /* =Footer */
 #colophon {
 	position: absolute;
-	left: 0;
+	left: -1000px;
 	bottom: 0;
 	z-index: 30;
-	width: 100%;
+	width: 3000px;
 	height: 180px;
 	background: url('img/textures/red_paper_texture.png') 0 0 repeat;
 	#site-generator {
@@ -289,7 +290,7 @@ body {
   width: 162px;
 	position: absolute;
 	right: -140px;
-	top: 0;
+	top: -50%;
 	z-index: 30;
 	.transition();
 	&:after {
@@ -317,9 +318,9 @@ body {
 }
 
 .data-toggle {
-  background: url('http://bd.local/wp-content/themes/bd_2012/img/assets/sprite.png') -147px -45px no-repeat;
-  display: none;
-  visibility: hidden;
+  /*background: url('http://bd.local/wp-content/themes/bd_2012/img/assets/sprite.png') -147px -45px no-repeat;*/
+  /*display: none;*/
+  /*visibility: hidden;*/
   width: 163px;
   height: 47px;
   color: @bdwhite;
@@ -394,11 +395,8 @@ body {
 		}
 	}
 	.summary-thought {
-		clear: both;
-		margin-left: 25%;
-		text-align: right;
-		font-size: 1.8em;
-		font-style: italic;
+		clear: both;		
+		.titleing;
 	}
 	.hentry {
 		padding: 0;

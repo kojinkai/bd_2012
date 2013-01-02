@@ -1,6 +1,6 @@
 /* ==|== Mixins / variables =================================================
 ========================================================================== */ 
-.drop-shadow(@x-axis: 0, @y-axis: 10px, @blur: 2px, @distance: 4px, @alpha: 0.2) {
+.drop-shadow(@x-axis: 0, @y-axis: 5px, @blur: 6px, @distance: 3px, @alpha: 0.18) {
   -webkit-box-shadow: @x-axis @y-axis @blur @distance rgba(0, 0, 0, @alpha);
   -moz-box-shadow: @x-axis @y-axis @blur @distance rgba(0, 0, 0, @alpha);
   box-shadow: @x-axis @y-axis @blur @distance rgba(0, 0, 0, @alpha);
@@ -21,6 +21,17 @@
 
 .text-shadow(@offset-x: 1px, @offset-y: 1px, @shadowColor: #2D5A75) {
   text-shadow: @offset-x, @offset-y, @shadowColor;  
+}
+
+.titleing() {
+  color: #666;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 2.6em;
+  margin: 0 0 2.6em;
+  text-transform: uppercase;
+  padding-left: 15.63%;
 }
 
 @black: #333;
