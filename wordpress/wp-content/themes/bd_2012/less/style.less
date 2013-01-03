@@ -120,15 +120,15 @@ body {
 #colophon {
 	position: absolute;
 	left: -400%;
-	bottom: -60px;
+	bottom: -90px;
 	z-index: 30;
 	width: 900%;
-	height: 325px;
+	height: 345px;
 	background: url('img/textures/redox.png') 0 0 repeat;
 	.drop-shadow(0px, 0px, 6px, 3px, 0.18);
 	&>div {
 		margin: 200px auto 0;
-		width: 120px;
+		width: 146px;
 	}
 	#site-generator {
 		background: none;
@@ -153,9 +153,10 @@ body {
 		li {
 			float: left;
 			a {
-				background: url('img/assets/social_icons.png') 0 -38px no-repeat;
-				width: 39px;
-				height: 39px;
+				background: url('img/assets/new_sprite.png') 0 -38px no-repeat;
+				width: 46px;
+				height: 46px;
+				margin-right: 2px;
 				display: block;
 				&:hover {
 					background-position-y: 0; 
@@ -164,32 +165,37 @@ body {
 		}
 	}
 	.footer-mail-link {
-		background: url('img/assets/mugshot.png') 0 0 no-repeat;
+		background: url('img/assets/new_sprite.png') -98px -270px no-repeat;
 		display: block;
 		margin: 0 auto;
 		width: 75px;
 		height: 75px;
+		border-radius: 50%;		
+		border: 7px solid #333;
+		&:hover {
+			border-color: #AF4D2D;
+		}
 	}
 }
 
 /* specific styles here for readability */
 #colophon ul li a {
 	&[href*="flickr"] {
-		background-position: -77px -38px;
+		background-position: -100px -442px;
 		&:hover {
-			background-position-y: 0;
+			background-position-y: -394px;
 		}
 	}
 	&[href*="twitter"] {
-		background-position: -37px -38px;
+		background-position: -50px -442px;
 		&:hover {
-			background-position-y: 0;
+			background-position-y: -394px;
 		}
 	}
 	&[href*="linkedin"] {
-		background-position: 0px -38px;
+		background-position: -2px -442px;
 		&:hover {
-			background-position-y: 0;
+			background-position-y: -394px;
 		}
 	}		
 }

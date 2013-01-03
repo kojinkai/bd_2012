@@ -70,15 +70,15 @@ body{font-size:62.5%;height:100%;}
 #logo{width:140px;height:137px;background:url('img/assets/new_sprite.png') 0 -12px no-repeat transparent;position:relative;bottom:5px;right:-27px;float:left;z-index:50;}
 #main_nav{float:left;width:65%;margin-left:9.4%;-webkit-transition:all 0.2s ease-in;-moz-transition:all 0.2s ease-in;-ms-transition:all 0.2s ease-in;-o-transition:all 0.2s ease-in;}#main_nav .menu li{float:left;text-transform:uppercase;margin-right:2%;font-size:3em;padding:1em 0;}#main_nav .menu li a{text-decoration:none;color:#333333;}#main_nav .menu li a:hover{color:#333333;border-bottom:4px solid #333333;}
 #main_nav .menu li .current-menu-item{border-bottom:4px solid #333333;}
-#colophon{position:absolute;left:-400%;bottom:-60px;z-index:30;width:900%;height:325px;background:url('img/textures/redox.png') 0 0 repeat;-webkit-box-shadow:0px 0px 6px 3px rgba(0, 0, 0, 0.18);-moz-box-shadow:0px 0px 6px 3px rgba(0, 0, 0, 0.18);box-shadow:0px 0px 6px 3px rgba(0, 0, 0, 0.18);}#colophon>div{margin:200px auto 0;width:120px;}
+#colophon{position:absolute;left:-400%;bottom:-90px;z-index:30;width:900%;height:345px;background:url('img/textures/redox.png') 0 0 repeat;-webkit-box-shadow:0px 0px 6px 3px rgba(0, 0, 0, 0.18);-moz-box-shadow:0px 0px 6px 3px rgba(0, 0, 0, 0.18);box-shadow:0px 0px 6px 3px rgba(0, 0, 0, 0.18);}#colophon>div{margin:200px auto 0;width:146px;}
 #colophon #site-generator{background:none;padding-top:6em;}
 #colophon h3{color:#FBFAF5;font-size:2em;font-weight:bold;font-style:italic;position:absolute;top:47%;right:3%;}
-#colophon ul{padding:0;list-style:none;list-style-position:inside;}#colophon ul li{float:left;}#colophon ul li a{background:url('img/assets/social_icons.png') 0 -38px no-repeat;width:39px;height:39px;display:block;}#colophon ul li a:hover{background-position-y:0;}
-#colophon .footer-mail-link{background:url('img/assets/mugshot.png') 0 0 no-repeat;display:block;margin:0 auto;width:75px;height:75px;}
-#colophon ul li a[href*="flickr"]{background-position:-77px -38px;}#colophon ul li a[href*="flickr"]:hover{background-position-y:0;}
-#colophon ul li a[href*="twitter"]{background-position:-37px -38px;}#colophon ul li a[href*="twitter"]:hover{background-position-y:0;}
-#colophon ul li a[href*="linkedin"]{background-position:0px -38px;}#colophon ul li a[href*="linkedin"]:hover{background-position-y:0;}
-#content{width:94%;margin:0 3%;padding-top:8em;}
+#colophon ul{padding:0;list-style:none;list-style-position:inside;}#colophon ul li{float:left;}#colophon ul li a{background:url('img/assets/new_sprite.png') 0 -38px no-repeat;width:46px;height:46px;margin-right:2px;display:block;}#colophon ul li a:hover{background-position-y:0;}
+#colophon .footer-mail-link{background:url('img/assets/new_sprite.png') -98px -270px no-repeat;display:block;margin:0 auto;width:75px;height:75px;border-radius:50%;border:7px solid #333;}#colophon .footer-mail-link:hover{border-color:#AF4D2D;}
+#colophon ul li a[href*="flickr"]{background-position:-100px -442px;}#colophon ul li a[href*="flickr"]:hover{background-position-y:-394px;}
+#colophon ul li a[href*="twitter"]{background-position:-50px -442px;}#colophon ul li a[href*="twitter"]:hover{background-position-y:-394px;}
+#colophon ul li a[href*="linkedin"]{background-position:-2px -442px;}#colophon ul li a[href*="linkedin"]:hover{background-position-y:-394px;}
+#content{width:94%;margin:0 3%;padding-top:4em;}
 .entry-header{margin-bottom:3em;}
 .entry-header,.entry-content,.entry-meta{-webkit-transition:all 0.2s ease-in;-moz-transition:all 0.2s ease-in;-ms-transition:all 0.2s ease-in;-o-transition:all 0.2s ease-in;}
 .entry-meta{float:left;clear:none;width:20%;text-align:center;font-size:1.6em;}.entry-meta span{display:block;font-style:italic;}
