@@ -7,7 +7,8 @@ body {
 	height: 100%;
 }
 
-#wrapper {
+#wrapper,
+#top_nav_outer {
   max-width: 860px;
   margin: 0 auto 4em;
   padding: 0 3%;
@@ -16,23 +17,16 @@ body {
 	z-index: 0;
 }
 
-.multiplebgs #wrapper {
-  background: 
-    /*url('img/textures/bg_red_texture_tile.png') 0 0 repeat-y, 
-    url('img/textures/bg_red_texture_tile.png') 100% 0 repeat-y;*/
-}
-
-.outer-wrap {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 0 3% 15px;
-}
-
 .inner-wrap {
-	padding: 0 20px 16.5em;
+	padding: 0 20px 0;
+}
+
+#top_nav_outer {
+	margin-bottom: 0;
 }
 
 #page-outer {
+	padding-bottom: 16.5em;
 	background: url('img/textures/redox.png') repeat;	
 	.drop-shadow;
 	position: relative;
@@ -67,33 +61,18 @@ body {
 	position: relative;
 	right: 3.7%;
 	z-index: 60;
-	/*background: url('img/textures/red_paper_texture.png') 0 0 repeat;*/
-	padding: 5px 3.7% 10px;
-	/*.drop-shadow(0,1px,11px, 2px, 0.35);*/
-}
-
-#top_nav_outer {
+	padding: 0 3.7% 0;
+	.drop-shadow(0, 1px, 8px, 1px, 0.28);
 	background: @bdwhite;
-	min-height: 95px;
-	border-bottom: 1px dashed #DDD;
-}
-
-#logo {
-  width: 140px;
-  height: 128px;
-	background: url('img/assets/new_sprite.png') 24px 6px no-repeat transparent;
-	position: relative;
-	right: -27px;
-	float: left;
-	z-index: 50;
-	.transition();
+	border-bottom: 1px dashed #DDD;	
 }
 
 #main_nav {
-	float: left;
-	width: 65%;
-	margin-left: 9.4%;
 	.transition();
+	.menu-main-navigation-container {
+		width: 94%;
+		margin: 0 3%;
+	}
 	.menu {
 		li {
 			float: left;
@@ -220,10 +199,10 @@ body {
 
 
 .entry-meta {
-	float: left;
-	clear: none;
+	float: right;
 	width: 20%;
-	text-align: center;
+	text-align: right;
+	clear: none;
 	font-size: 1.6em;
 	span {
 		display: block;
@@ -236,7 +215,6 @@ body {
 	}
 	.pub_date,
 	.category_count {
-    margin-top: -64px;
 		span {
 			display: block;
 			font-style : normal;
@@ -258,8 +236,8 @@ body {
 }
 
 .entry-title {
-	padding-top: 0;
-	margin-left: 25%;
+	padding: 0;
+	width: 75%;
 	font-size: 4em;
 	border-bottom: 4px solid @black;
 	padding-bottom: 0;
@@ -280,9 +258,9 @@ body {
 }
 
 .entry-content {
-	float: right;
 	width: 75%;
 	padding: 0;
+	float: left;
 }
 
 .hentry, .no-results {

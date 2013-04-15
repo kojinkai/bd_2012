@@ -20,7 +20,7 @@
 				<?php endif; ?>
 
 			</header><!-- .entry-header -->
-        <div class="entry-main">
+        <div class="entry-main clearfix">
 			<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 			<div class="entry-summary">
 				<?php the_excerpt(); ?>
