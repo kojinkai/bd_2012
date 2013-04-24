@@ -767,17 +767,15 @@ body {
   -o-transition: all 0.2s ease-in;
 }
 .entry-meta {
-  padding: 10px 40px 5px;
-  margin-right: -3.3%;
-  float: right;
+  padding: 1em 2em 0.6em;
+  position: absolute;
+  top: -18px;
+  right: -7.3%;
   text-align: center;
-  clear: none;
-  background: #333333;
-  -webkit-box-shadow: 0 5px 6px 3px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0 5px 6px 3px rgba(0, 0, 0, 0.18);
-  box-shadow: 0 5px 6px 3px rgba(0, 0, 0, 0.18);
-  padding: 0.5em 2em;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.16);
+  background: #DDD;
   color: white;
+  text-shadow: 1px 1px 1px #c9c9c9;
 }
 .entry-meta span {
   display: block;
@@ -805,6 +803,22 @@ body {
 }
 .entry-meta .category_count p {
   margin-left: 15%;
+}
+.entry-meta:after {
+  height: 0;
+  width: 0;
+  position: absolute;
+  border: solid transparent;
+  content: ' ';
+}
+.entry-meta:after {
+  top: 42px;
+  right: 0;
+  left: auto;
+  border-width: 5px;
+  border-right-color: #cfcfcf;
+  border-radius: 50%;
+  -webkit-transform: rotate(45deg) scale(1.45);
 }
 .entry-title {
   padding: 0;
@@ -901,21 +915,6 @@ body {
   text-shadow: 1px 1px #2d5a75, 2px 2px #2d5a75, 3px 3px #2d5a75;
 }
 /* =Single */
-.singular {
-  /*	.entry-content {
-		float: none;
-	}*/
-
-  /*  .entry-meta {
-    .pub_date {
-    	display: inline;
-      a {
-        color: @black;
-      }
-    } 
-  }*/
-
-}
 .singular #content {
   width: 94%;
   margin: 0 3%;
@@ -952,44 +951,44 @@ body {
 .singular .entry-content {
   width: auto;
 }
-.singular .entry-meta {
-  padding: 10px 40px 5px;
-  margin-right: -3.3%;
-  float: right;
+.singular footer.entry-meta {
+  position: absolute;
+  right: -3.3%;
+  width: auto;
+  /*margin-right: -3.3%;*/
+
+  /*float: right;*/
+
   text-align: center;
   clear: none;
-  background: #333333;
-  -webkit-box-shadow: 0 5px 6px 3px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0 5px 6px 3px rgba(0, 0, 0, 0.18);
-  box-shadow: 0 5px 6px 3px rgba(0, 0, 0, 0.18);
-  padding: 0.5em 2em;
-  color: white;
+  background: #DDD;
+  padding: 1em 2em 0.6em;
 }
-.singular .entry-meta span {
+.singular footer.entry-meta span {
   display: block;
   font-style: italic;
 }
-.singular .entry-meta a {
+.singular footer.entry-meta a {
   font-style: normal;
   font-weight: normal;
   font-size: 2em;
   text-transform: uppercase;
   color: #fbfaf5;
 }
-.singular .entry-meta .pub_date span,
-.singular .entry-meta .category_count span {
+.singular footer.entry-meta .pub_date span,
+.singular footer.entry-meta .category_count span {
   display: block;
   font-style: normal;
 }
-.singular .entry-meta .pub_date a,
-.singular .entry-meta .category_count a {
+.singular footer.entry-meta .pub_date a,
+.singular footer.entry-meta .category_count a {
   text-decoration: none;
 }
-.singular .entry-meta .pub_date a :hover,
-.singular .entry-meta .category_count a :hover {
+.singular footer.entry-meta .pub_date a :hover,
+.singular footer.entry-meta .category_count a :hover {
   text-decoration: none;
 }
-.singular .entry-meta .category_count p {
+.singular footer.entry-meta .category_count p {
   margin-left: 15%;
 }
 .singular .summary-thought {
@@ -1145,56 +1144,17 @@ pre.prettyprint {
   }
   .entry-content {
     float: none;
-    width: 100%;
+    width: auto;
   }
   .entry-title {
     margin-left: 0;
   }
-  footer.entry-meta {
-    float: none;
-    width: auto;
-    text-align: left;
-  }
   .entry-meta {
     font-size: 1.2em;
-  }
-  .entry-meta span {
-    display: inline;
-    font-family: "adobe-garamond-pro";
-    font-style: italic;
-  }
-  .entry-meta .pub_date {
-    float: none;
-    margin-top: 0;
-    text-align: left;
-  }
-  .entry-meta .pub_date a {
-    width: 100%;
-    margin-left: 0;
-    text-shadow: none;
-    font-size: 1.8em;
-    color: #333333;
-  }
-  .entry-meta .category_count {
-    float: none;
-    background-position: -5px -436px;
-  }
-  .entry-meta .category_count p {
-    text-shadow: none;
-    color: #333333;
-  }
-  .entry-meta .category_count span {
-    display: none;
   }
   .entry-title,
   .entry-header .entry-meta {
     padding-right: 0;
-    margin: 0;
-  }
-  .singular .entry-header,
-  .singular .entry-content,
-  .singular footer.entry-meta,
-  .singular .entry-header {
     margin: 0;
   }
 }

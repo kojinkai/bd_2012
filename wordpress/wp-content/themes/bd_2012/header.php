@@ -55,11 +55,4 @@
   	</header><!-- #branding -->
 <div id="wrapper">
   <div id="page-outer" class="inner-wrap hfeed">
-    <?php if ( is_single() ) { ?>
-      <nav id="nav-single">
-				<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
-				<span class="nav-previous"><?php previous_post_link( '%link', __( 'Previous', 'twentyeleven' ) ); ?></span>
-				<span class="nav-next"><?php next_post_link( '%link', __( 'Next', 'twentyeleven' ) ); ?></span>
-	  </nav><!-- #nav-single -->
-    <?php } ?>
 	<div id="page" class="clearfix">
