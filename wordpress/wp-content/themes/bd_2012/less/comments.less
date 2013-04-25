@@ -1,0 +1,73 @@
+.singular {
+	#comments-title {
+		font-size: 2.2em;
+		width: auto;
+		padding: 0;
+		color: @black;
+	}
+}
+
+.commentlist .avatar {
+	left: -120px;
+}
+
+.commentlist .children .avatar {
+	position: relative;
+	float: left;
+	left: 0;
+	top: 0;
+}
+
+.commentlist .children li.comment {
+	padding: 1.625em 0;
+	border-left: 0;
+	
+	.comment-meta {
+		margin-left: 0;
+	}
+
+	.meta-block {
+		float: left;
+		margin-left: 10px;
+		h1 {
+			text-transform: uppercase;
+			font-size: 2em;
+		}
+	}
+}
+
+
+.commentlist > li.comment {
+	background-color: rgb(253, 253, 253);
+
+	h1 {
+		font-size: 2.8em;
+		text-transform: uppercase;
+	}
+
+	&>article {
+		padding: 1.625em;
+		margin-left: -1.625em;
+		margin-right: -1.625em;
+		border-bottom: 1px solid #d3d3d3;
+	}
+
+	.meta-block a {
+		color: @darkGrey;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 1.2em;
+		font-weight: normal;
+		letter-spacing: 2px;
+	}
+	
+	.comment-content {
+		padding: 5px 0;
+		margin-bottom: 20px;
+		border-radius: 3px;
+	}
+}
+
+.commentlist .children > li.bypostauthor {
+	background-color: rgb(253, 253, 253);
+}
