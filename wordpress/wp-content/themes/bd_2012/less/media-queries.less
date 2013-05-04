@@ -77,59 +77,31 @@
 	}
 	.entry-content {
 		float: none;
-		width: 100%;
+		width: auto;
 	}
 	.entry-title {
 		margin-left: 0;
 	}
-	footer.entry-meta {
-		float: none;
-		width: 100%;
-		text-align: left;
-	}
 	.entry-meta {
 	  font-size: 1.2em;
-		span {
-		display: inline;
-		font-family: "adobe-garamond-pro";
-		font-style: italic;
-		}
-		.pub_date {	
-			float: none;
-			margin-top: 0;
-			text-align: left;
-			a {
-				width: 100%;
-				margin-left: 0;
-        text-shadow: none;
-				font-size: 1.8em;
-				color: @black;
-			}
-		}
-		.category_count {
-			float: none;
-			background-position: -5px -436px;
-			p {
-				text-shadow: none;
-				color: @black;
-			}
-			span {
-				display: none;
-			}
-		}
 	}
 	.entry-title,
 	.entry-header .entry-meta {
 		padding-right: 0;
 		margin: 0;
 	}
-  .singular {
-	  .entry-header, 
-		.entry-content,
-		footer.entry-meta,
-		.entry-header {
-			margin: 0;
-		}
+  .commentlist {
+    width: auto;
+    &>li.comment,
+    .commentlist .pingback {
+      margin-left: 0;
+    }
+  }
+} 
+
+@media only screen and (max-width: 650px) {
+  .commentlist {
+    margin-left: 0;
   }
 }
 

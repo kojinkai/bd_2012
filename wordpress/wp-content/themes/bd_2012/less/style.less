@@ -9,7 +9,7 @@ body {
 
 #wrapper,
 #top_nav_outer {
-  max-width: 860px;
+  max-width: 780px;
   margin: 0 auto 4em;
   padding: 0 3%;
   /*background: url('img/legacy/red_perforated_bg.png') repeat-y top right transparent;*/
@@ -34,6 +34,7 @@ body {
 }
 
 #page {
+  padding-bottom: 50px;
   background: @bdwhite;
   max-width: 820px;
 	min-height: 750px;
@@ -79,7 +80,7 @@ body {
 			text-transform: uppercase;
 			margin-right: 2%;
 			font-size: 3em;
-			padding: 1em 0;
+			padding: 0.5em 0;
 			a {
 				text-decoration: none;
 				color: @black	;
@@ -99,10 +100,10 @@ body {
 #colophon {
 	position: absolute;
 	left: -400%;
-	bottom: -115px;
+	bottom: -35px;
 	z-index: 30;
 	width: 900%;
-	height: 345px;
+	height: 250px;
 	padding-bottom: 30px;
 	background: url('img/textures/redox.png') 0 0 repeat;
 	.drop-shadow(0px, 0px, 6px, 3px, 0.18);
@@ -142,18 +143,6 @@ body {
 					background-position-y: 0; 
 				}
 			}
-		}
-	}
-	.footer-mail-link {
-		background: url('img/assets/new_sprite.png') -98px -153px no-repeat;
-		display: block;
-		margin: 0 auto;
-		width: 75px;
-		height: 75px;
-		border-radius: 50%;		
-		border: 7px solid #333;
-		&:hover {
-			border-color: #AF4D2D;
 		}
 	}
 }
@@ -199,11 +188,12 @@ body {
 
 
 .entry-meta {
-	float: right;
-	width: 20%;
-	text-align: right;
-	clear: none;
-	font-size: 1.6em;
+	padding: 1em 2em 0.6em;
+	position: absolute;
+	top: -18px;
+	right: -7%;
+	text-align: center;
+	.greyBox;
 	span {
 		display: block;
 		font-style: italic;
@@ -211,7 +201,9 @@ body {
 	a {
 		font-style: normal;
 		font-weight: normal;
-		font-size: inherit;
+		font-size: 2em;
+		text-transform: uppercase;
+		color: rgb(104, 104, 104);
 	}
 	.pub_date,
 	.category_count {
@@ -219,11 +211,7 @@ body {
 			display: block;
 			font-style : normal;
 		}
-    a, p {
-      text-align: center;
-      line-height: 1;
-      /*color: @black;*/
-      .transition();  
+    a {
       text-decoration: none;
       :hover {
         text-decoration: none;
@@ -233,6 +221,11 @@ body {
 	.category_count p {
 		margin-left: 15%;
 	}
+}
+
+.textshadow .entry-meta a {
+	color: @bdwhite;
+	text-shadow: 1px 1px 1px rgb(201, 201, 201);	
 }
 
 .entry-title {
@@ -254,7 +247,7 @@ body {
 		&:active {
 		  color: @bdred;
 		}
-	}	
+	}
 }
 
 .entry-content {
@@ -331,44 +324,80 @@ body {
 /* =Single */
 .singular {
 	#content {
+		width: 94%;
 		margin: 0 3%;
-		position: inherit;
-		padding-top: 0;
+		padding-top: 4em;		
 	}
-	.entry-header, 
-	.entry-content,
-	footer.entry-meta,
 	.entry-header {
-		margin: 0 0 1.5em 25%;
+		width: auto;
+		margin-bottom: 3em;
 	}
 	.entry-title {
-		margin-left: 0;
-		font-weight: normal;
+		padding: 0;
+		width: auto;
 		font-size: 4em;
+		border-bottom: 4px solid @black;
+		padding-bottom: 0;
+		line-height: normal;
+		text-transform: uppercase;
+		color: @black;
+		font-weight: normal;
+		a {
+			text-transform: uppercase;
+			color: @black;
+			font-weight: normal;
+			.transition(color, 0.2s);
+			&:hover, 
+			&:active {
+			  color: @bdred;
+			}
+		}
 	}
 	.entry-content {
-		float: none;
+		width: auto;
 	}
-  .entry-meta {
-    .pub_date {
-    	display: inline;
-      a {
-        color: @black;
-      }
-    } 
-  }
 	footer.entry-meta {
-		float: none;
-		text-align: left;
-		margin-bottom: 1%;
+		position: absolute;
+		right: -7%;
+		top: -40px;
+		width: auto;
+		text-align: center;
+		clear: none;
+		padding: 1em 2em 0.6em;
 		span {
-			display: inline;
+			display: block;
+			font-style: italic;
+		}
+		a {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 2em;
+			text-transform: uppercase;
+			color: @bdwhite;
+		}
+		.pub_date,
+		.category_count {
+			span {
+				display: block;
+				font-style : normal;
+			}
+	    a {
+	      text-decoration: none;
+	      :hover {
+	        text-decoration: none;
+	      }
+	    }
+	  }
+		.category_count p {
+			margin-left: 15%;
 		}
 	}
 	.summary-thought {
-		clear: both;
-		text-align: right;		
-		.titleing;
+	  font-size: 1.2em;
+	  letter-spacing: 0.1em;
+	  line-height: 1.2em;
+	  margin: 0 0 1.2em;
+	  text-transform: uppercase;
 	}
 	.hentry {
 		padding: 0;

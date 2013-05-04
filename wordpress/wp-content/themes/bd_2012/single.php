@@ -12,10 +12,10 @@ get_header(); ?>
 			<div id="content" role="main">
 
 				<?php while ( have_posts() ) : the_post(); ?>
-                    <p class="summary-thought"><?php echo get_post_meta($post->ID, 'Summarising Thought', true); ?></p>
+
 					<?php get_template_part( 'content', 'single' ); ?>
 
-					<?php // comments_template( '', true ); ?>
+					<?php comments_template( '', true ); ?>
 
 				<?php endwhile; // end of the loop. ?>
 
