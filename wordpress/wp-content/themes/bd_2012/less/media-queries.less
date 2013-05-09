@@ -101,7 +101,24 @@
 
 @media only screen and (max-width: 650px) {
   .commentlist {
+    .avatar {
+      margin-bottom: 20px;
+    }
+  }  
+  .commentlist,
+  #respond {
     margin-left: 0;
+  }
+  #respond {
+    width: auto;
+    input#submit {
+      display: block;
+      margin: 0 auto;
+      float: none;
+    }
+  }
+  .commentlist > li.bypostauthor:before {
+    content: "";
   }
 }
 

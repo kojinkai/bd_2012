@@ -98,14 +98,17 @@ a.comment-reply-link {
 	width: 83.9%;
 	margin: 0 0 0 15.9%;
 	padding: 0;
+	border: none;
 	background: @bdwhite;
   #reply-title {
-    padding:  0.8125em 0.8125em 0;
+    padding:  0.8125em 0 0;
   }
   textarea {
     border: 1px solid #d3d3d3;
     border-radius: 3px;
     box-shadow: none;
+    padding: 3.5%;
+    width: 92.5%;
   }
   .comment-form-comment label {
     display: none;
@@ -120,11 +123,17 @@ a.comment-reply-link {
     margin: 0;
     text-align: right;
     left: auto;
+    background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    border: 1px solid #d3d3d3;
+    color: @black;
+    text-transform: uppercase;
   }
 }
 
 #commentform {
-    padding: 1.625em;
+    padding: 1.625em 0;
     *zoom: 1;
     &:before,
     &:after {
