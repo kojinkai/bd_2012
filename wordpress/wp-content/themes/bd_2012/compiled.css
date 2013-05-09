@@ -590,6 +590,13 @@ td {
   background-color: #c67605 \9;
 }
 /*@import url("contact.less");*/
+pre.prettyprint {
+  box-shadow: none!important;
+  margin-left: 0!important;
+  border: 1px solid #DDD!important;
+  font-family: 'Menlo', 'Monaco', monospace !important;
+  font-size: 16px;
+}
 /************************* My styles ***************************************//* ==|== Structure ==========================================================
 ========================================================================== */
 body {
@@ -622,6 +629,7 @@ body {
   z-index: 20;
 }
 #page {
+  padding-bottom: 50px;
   background: #fcfcfc;
   max-width: 820px;
   min-height: 750px;
@@ -773,7 +781,7 @@ body {
   right: -7%;
   text-align: center;
   box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.16);
-  background: #DDD;
+  background: #e4e4e4;
 }
 .entry-meta span {
   display: block;
@@ -904,7 +912,7 @@ body {
 .singular #content {
   width: 94%;
   margin: 0 3%;
-  padding-top: 4em;
+  padding-top: 5em;
 }
 .singular .entry-header {
   width: auto;
@@ -940,7 +948,7 @@ body {
 .singular footer.entry-meta {
   position: absolute;
   right: -7%;
-  top: -40px;
+  top: -49px;
   width: auto;
   text-align: center;
   clear: none;
@@ -1127,15 +1135,18 @@ a.comment-reply-link {
   width: 83.9%;
   margin: 0 0 0 15.9%;
   padding: 0;
+  border: none;
   background: #fcfcfc;
 }
 #respond #reply-title {
-  padding: 0.8125em 0.8125em 0;
+  padding: 0.8125em 0 0;
 }
 #respond textarea {
   border: 1px solid #d3d3d3;
   border-radius: 3px;
   box-shadow: none;
+  padding: 3.5%;
+  width: 92.5%;
 }
 #respond .comment-form-comment label {
   display: none;
@@ -1145,14 +1156,20 @@ a.comment-reply-link {
   margin: 0;
 }
 #respond input#submit {
-  display: block;
+  float: right;
   padding: 10px 25px;
   margin: 0;
   text-align: right;
   left: auto;
+  background: transparent;
+  box-shadow: none;
+  text-shadow: none;
+  border: 1px solid #d3d3d3;
+  color: #575757;
+  text-transform: uppercase;
 }
 #commentform {
-  padding: 1.625em;
+  padding: 1.625em 0;
   *zoom: 1;
 }
 #commentform:before,
@@ -1264,8 +1281,23 @@ a.comment-reply-link {
   }
 }
 @media only screen and (max-width: 650px) {
-  .commentlist {
+  .commentlist .avatar {
+    margin-bottom: 20px;
+  }
+  .commentlist,
+  #respond {
     margin-left: 0;
+  }
+  #respond {
+    width: auto;
+  }
+  #respond input#submit {
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+  .commentlist > li.bypostauthor:before {
+    content: "";
   }
 }
 @media only screen and (max-width: 600px) {
