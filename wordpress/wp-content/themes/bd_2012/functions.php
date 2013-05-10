@@ -9,7 +9,6 @@ function bd_common_scripts() {
 
 add_action('wp_enqueue_scripts', 'bd_common_scripts');
 
-register_nav_menu( 'main', 'Main Menu' );
 
 if ( ! function_exists( 'twentyeleven_posted_on' ) ) :
 /**
