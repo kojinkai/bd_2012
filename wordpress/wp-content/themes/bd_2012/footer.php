@@ -17,6 +17,7 @@
             }
           ?>
         </ul>
+        <a id="lewis-nixon-headshot" class="ir footer-mail-link" href="mailto:lewis@box-deluxe.com">lewis@box-deluxe.com</a>
       </div>
   	</footer><!-- #main-footer -->
   </div><!-- #page outer -->
