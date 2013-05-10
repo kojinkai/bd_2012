@@ -96,11 +96,12 @@ body {
 	}
 }
 
+
 /* =Footer */
 #colophon {
 	position: absolute;
 	left: -400%;
-	bottom: -35px;
+	bottom: -100px;
 	z-index: 30;
 	width: 900%;
 	height: 250px;
@@ -108,7 +109,7 @@ body {
 	background: url('img/textures/redox.png') 0 0 repeat;
 	.drop-shadow(0px, 0px, 6px, 3px, 0.18);
 	&>div {
-		margin: 200px auto 0;
+		margin: 120px auto 0;
 		width: 146px;
 	}
 	#site-generator {
@@ -145,6 +146,18 @@ body {
 			}
 		}
 	}
+	.footer-mail-link {
+		background: url('img/assets/new_sprite.png') -98px -153px no-repeat;
+		display: block;
+		margin: 0 auto;
+		width: 75px;
+		height: 75px;
+		border-radius: 50%;		
+		border: 7px solid #333;
+		&:hover {
+			border-color: #AF4D2D;
+		}
+	}	
 }
 
 /* specific styles here for readability */

@@ -693,7 +693,7 @@ body {
 #colophon {
   position: absolute;
   left: -400%;
-  bottom: -35px;
+  bottom: -100px;
   z-index: 30;
   width: 900%;
   height: 250px;
@@ -704,7 +704,7 @@ body {
   box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.18);
 }
 #colophon > div {
-  margin: 200px auto 0;
+  margin: 120px auto 0;
   width: 146px;
 }
 #colophon #site-generator {
@@ -737,6 +737,18 @@ body {
 }
 #colophon ul li a:hover {
   background-position-y: 0;
+}
+#colophon .footer-mail-link {
+  background: url('img/assets/new_sprite.png') -98px -153px no-repeat;
+  display: block;
+  margin: 0 auto;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 7px solid #333;
+}
+#colophon .footer-mail-link:hover {
+  border-color: #AF4D2D;
 }
 /* specific styles here for readability */
 #colophon ul li a[href*="flickr"] {
