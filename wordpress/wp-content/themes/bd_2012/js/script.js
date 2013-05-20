@@ -19,9 +19,7 @@ var BD_2012 = BD_2012 || {};
   // with the classList property
   o.add_mobile_webkit_class = function() {
     if (isMobileWebkit) {
-      var elementArr = document.getElementsByTagName("html"),
-          html = elementArr[0];
-
+      var html = document.getElementsByTagName("html")[0];
       html.classList.add('mobile-webkit');
     }
   };
