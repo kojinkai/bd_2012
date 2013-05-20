@@ -31,6 +31,7 @@ var BD_2012 = BD_2012 || {};
 })(BD_2012);
 
 jQuery(function($) {
+  BD_2012.add_mobile_webkit_class();
   BD_2012.scrollToMugshot();
 });
 
