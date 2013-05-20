@@ -14,10 +14,15 @@ var BD_2012 = BD_2012 || {};
   // test against ua for mobile webkit / old IE
   var isMobileWebkit = /WebKit/.test(ua) && /Mobile/.test(ua);
 
-  // Start adding functions to our namespace
+  // Test to see if its mobile webkit and
+  // start adding classes in the new old-fashioned way,
+  // with the classList property
   o.add_mobile_webkit_class = function() {
     if (isMobileWebkit) {
-      $('html').addClass('mobile-webkit');
+      var elementArr = document.getElementsByTagName("html"),
+          html = elementArr[0];
+
+      html.classList.add('mobile-webkit');
     }
   };
 
@@ -26,7 +31,7 @@ var BD_2012 = BD_2012 || {};
       $('html, body').animate({
         scrollTop: $("#lewis-nixon-headshot").offset().top
       }, 1500);  
-    });    
+    });
   };   
 })(BD_2012);
 
